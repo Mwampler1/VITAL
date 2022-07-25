@@ -1,3 +1,5 @@
+need gr-CARES and doatools repo for this
+
 This is the CARES-write-a-block package meant as a guide to building
 out-of-tree packages. To use the CARES blocks, the Python namespaces
 is in 'CARES', which is imported as:
