@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1CARES_1_1find__local__max" kind="class" language="C++" prot="public">
+    <compoundname>gr::CARES::find_local_max</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1CARES_1_1find__local__max__impl" prot="public" virt="non-virtual">gr::CARES::find_local_max_impl</derivedcompoundref>
+    <includes refid="find__local__max_8h" local="no">find_local_max.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1CARES_1_1find__local__max_1a9ddae5f67551dc6800bf857e1e13846b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1CARES_1_1find__local__max" kindref="compound">find_local_max</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;find_local_max&gt; gr::CARES::find_local_max::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/find_local_max.h" line="45" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/find_local_max.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1CARES_1_1find__local__max_1a4751db154bbe74bf9f1e7a19de2ab5a8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1CARES_1_1find__local__max_1a9ddae5f67551dc6800bf857e1e13846b" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::CARES::find_local_max::make</definition>
+        <argsstring>(int num_max_vals, int vector_len, float x_min, float x_max)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>num_max_vals</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vector_len</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x_max</declname>
+        </param>
+        <briefdescription>
+<para>Make a block to find the local maxima and their locations. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_max_vals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of max. values </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vector_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the input vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Min. value of the index vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Max. value of the index vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/find_local_max.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Finds a given number of local maxima in a vector. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block takes a vector of size (vector-length x 1) as input and outputs a float vector of size (number of max. values x 1) consisting of max. values and a float vector of size (number of max. values x 1) consisting of their locations. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="33">
+        <label>gr::CARES::find_local_max</label>
+        <link refid="classgr_1_1CARES_1_1find__local__max"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>sync_block</label>
+      </node>
+      <node id="35">
+        <label>gr::CARES::find_local_max_impl</label>
+        <link refid="classgr_1_1CARES_1_1find__local__max__impl"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="36">
+        <label>gr::CARES::find_local_max</label>
+        <link refid="classgr_1_1CARES_1_1find__local__max"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/find_local_max.h" line="43" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/find_local_max.h" bodystart="42" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classgr_1_1CARES_1_1find__local__max_1a4751db154bbe74bf9f1e7a19de2ab5a8" prot="public" virt="non-virtual"><scope>gr::CARES::find_local_max</scope><name>make</name></member>
+      <member refid="classgr_1_1CARES_1_1find__local__max_1a9ddae5f67551dc6800bf857e1e13846b" prot="public" virt="non-virtual"><scope>gr::CARES::find_local_max</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

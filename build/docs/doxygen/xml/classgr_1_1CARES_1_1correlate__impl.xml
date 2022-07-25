@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1CARES_1_1correlate__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::CARES::correlate_impl</compoundname>
+    <basecompoundref refid="classgr_1_1CARES_1_1correlate" prot="public" virt="non-virtual">gr::CARES::correlate</basecompoundref>
+    <includes refid="correlate__impl_8h" local="no">correlate_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1correlate__impl_1a313cdff6fd6df664cafabc9f943c3717" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::CARES::correlate_impl::d_num_inputs</definition>
+        <argsstring></argsstring>
+        <name>d_num_inputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" line="37" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1correlate__impl_1a78e790e8bb6dd490a77df66c8eec8c9d" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::CARES::correlate_impl::d_snapshot_size</definition>
+        <argsstring></argsstring>
+        <name>d_snapshot_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" line="38" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1correlate__impl_1af5f56c7add29fc2808e228db1693815c" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::CARES::correlate_impl::d_overlap_size</definition>
+        <argsstring></argsstring>
+        <name>d_overlap_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" line="39" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1correlate__impl_1a10ab3c8e3d43334bfa2b519f23d46d66" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::CARES::correlate_impl::d_avg_method</definition>
+        <argsstring></argsstring>
+        <name>d_avg_method</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" line="40" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1correlate__impl_1a37b3c4c638852b24e25ef5fff515bc0b" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::CARES::correlate_impl::d_nonoverlap_size</definition>
+        <argsstring></argsstring>
+        <name>d_nonoverlap_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" line="41" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1correlate__impl_1a4a73f6b35f7c8c88e252177a36d77ce9" prot="private" static="no" mutable="no">
+        <type>Eigen::MatrixXcf</type>
+        <definition>Eigen::MatrixXcf gr::CARES::correlate_impl::d_J</definition>
+        <argsstring></argsstring>
+        <name>d_J</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" line="43" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1correlate__impl_1a3e5ef8e55223941429aa0b41fb4998d2" prot="private" static="no" mutable="no">
+        <type>Eigen::MatrixXcf</type>
+        <definition>Eigen::MatrixXcf gr::CARES::correlate_impl::d_input_matrix</definition>
+        <argsstring></argsstring>
+        <name>d_input_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" line="44" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1CARES_1_1correlate__impl_1a495795c829f18de5ffcd1848978e2d2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::CARES::correlate_impl::correlate_impl</definition>
+        <argsstring>(int inputs, int snapshot_size, int overlap_size, int avg_method)</argsstring>
+        <name>correlate_impl</name>
+        <param>
+          <type>int</type>
+          <declname>inputs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>snapshot_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>overlap_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>avg_method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1CARES_1_1correlate__impl_1a14496156f197a0c99ac9fd7615a5a56a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::CARES::correlate_impl::~correlate_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~correlate_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1CARES_1_1correlate__impl_1ab3e8a785bea36deb73e9828a6f1f6512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::CARES::correlate_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="28">
+        <label>gr::CARES::correlate</label>
+        <link refid="classgr_1_1CARES_1_1correlate"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>gr::sync_decimator</label>
+      </node>
+      <node id="27">
+        <label>gr::CARES::correlate_impl</label>
+        <link refid="classgr_1_1CARES_1_1correlate__impl"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="31">
+        <label>gr::CARES::correlate</label>
+        <link refid="classgr_1_1CARES_1_1correlate"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>gr::sync_decimator</label>
+      </node>
+      <node id="30">
+        <label>gr::CARES::correlate_impl</label>
+        <link refid="classgr_1_1CARES_1_1correlate__impl"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" line="35" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.h" bodystart="34" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classgr_1_1CARES_1_1correlate__impl_1a495795c829f18de5ffcd1848978e2d2c" prot="public" virt="non-virtual"><scope>gr::CARES::correlate_impl</scope><name>correlate_impl</name></member>
+      <member refid="classgr_1_1CARES_1_1correlate__impl_1a10ab3c8e3d43334bfa2b519f23d46d66" prot="private" virt="non-virtual"><scope>gr::CARES::correlate_impl</scope><name>d_avg_method</name></member>
+      <member refid="classgr_1_1CARES_1_1correlate__impl_1a3e5ef8e55223941429aa0b41fb4998d2" prot="private" virt="non-virtual"><scope>gr::CARES::correlate_impl</scope><name>d_input_matrix</name></member>
+      <member refid="classgr_1_1CARES_1_1correlate__impl_1a4a73f6b35f7c8c88e252177a36d77ce9" prot="private" virt="non-virtual"><scope>gr::CARES::correlate_impl</scope><name>d_J</name></member>
+      <member refid="classgr_1_1CARES_1_1correlate__impl_1a37b3c4c638852b24e25ef5fff515bc0b" prot="private" virt="non-virtual"><scope>gr::CARES::correlate_impl</scope><name>d_nonoverlap_size</name></member>
+      <member refid="classgr_1_1CARES_1_1correlate__impl_1a313cdff6fd6df664cafabc9f943c3717" prot="private" virt="non-virtual"><scope>gr::CARES::correlate_impl</scope><name>d_num_inputs</name></member>
+      <member refid="classgr_1_1CARES_1_1correlate__impl_1af5f56c7add29fc2808e228db1693815c" prot="private" virt="non-virtual"><scope>gr::CARES::correlate_impl</scope><name>d_overlap_size</name></member>
+      <member refid="classgr_1_1CARES_1_1correlate__impl_1a78e790e8bb6dd490a77df66c8eec8c9d" prot="private" virt="non-virtual"><scope>gr::CARES::correlate_impl</scope><name>d_snapshot_size</name></member>
+      <member refid="classgr_1_1CARES_1_1correlate_1ae634327878ea88971bc5515ed957c3c4" prot="public" virt="non-virtual"><scope>gr::CARES::correlate_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1CARES_1_1correlate_1a278947ad7c57688bc273f84df93e37b3" prot="public" virt="non-virtual"><scope>gr::CARES::correlate_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1CARES_1_1correlate__impl_1ab3e8a785bea36deb73e9828a6f1f6512" prot="public" virt="non-virtual"><scope>gr::CARES::correlate_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1CARES_1_1correlate__impl_1a14496156f197a0c99ac9fd7615a5a56a" prot="public" virt="non-virtual"><scope>gr::CARES::correlate_impl</scope><name>~correlate_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

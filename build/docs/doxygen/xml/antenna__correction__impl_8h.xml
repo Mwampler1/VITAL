@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="antenna__correction__impl_8h" kind="file" language="C++">
+    <compoundname>antenna_correction_impl.h</compoundname>
+    <includes refid="antenna__correction_8h" local="no">CARES/antenna_correction.h</includes>
+    <includes local="no">armadillo</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>CARES/antenna_correction.h</label>
+        <link refid="antenna__correction_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="9">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="11">
+        <label>armadillo</label>
+      </node>
+      <node id="6">
+        <label>antenna_correction_impl.h</label>
+        <link refid="antenna__correction__impl_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>CARES/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1CARES_1_1antenna__correction__impl" prot="public">gr::CARES::antenna_correction_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1CARES">gr::CARES</innernamespace>
+    <innernamespace refid="namespacearma">arma</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/antenna_correction_impl.h"/>
+  </compounddef>
+</doxygen>

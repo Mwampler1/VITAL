@@ -1,0 +1,619 @@
+options:
+  parameters:
+    author: ''
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: no_gui
+    hier_block_src_path: '.:'
+    id: calibrate_lin_array_X310_TwinRX
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: run
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: ''
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 24]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: antenna_calibration
+  id: variable
+  parameters:
+    comment: ''
+    value: '"FMCOMMS5_calibration.cfg"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1088, 196.0]
+    rotation: 0
+    state: true
+- name: antenna_calibration_file_name
+  id: variable
+  parameters:
+    comment: ''
+    value: os.path.join(directory_config_files, antenna_calibration)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [576, 24]
+    rotation: 0
+    state: enabled
+- name: center_freq
+  id: variable
+  parameters:
+    comment: ''
+    value: '2450000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1248, 28.0]
+    rotation: 0
+    state: true
+- name: directory_config_files
+  id: variable
+  parameters:
+    comment: ''
+    value: '"/tmp"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1392, 84.0]
+    rotation: 0
+    state: true
+- name: gain
+  id: variable
+  parameters:
+    comment: ''
+    value: '60'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1232, 84.0]
+    rotation: 0
+    state: true
+- name: norm_spacing
+  id: variable
+  parameters:
+    comment: ''
+    value: '0.500'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1296, 84.0]
+    rotation: 0
+    state: true
+- name: num_array_elements
+  id: variable
+  parameters:
+    comment: ''
+    value: '4'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1088, 140.0]
+    rotation: 0
+    state: true
+- name: overlap_size
+  id: variable
+  parameters:
+    comment: ''
+    value: '512'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1224, 140.0]
+    rotation: 0
+    state: true
+- name: pilot_angle
+  id: variable
+  parameters:
+    comment: ''
+    value: '45'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1320, 140.0]
+    rotation: 0
+    state: true
+- name: rel_phase_offsets_file_name
+  id: variable
+  parameters:
+    comment: ''
+    value: os.path.join(directory_config_files, relative_phase_offset)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [384, 24]
+    rotation: 0
+    state: enabled
+- name: relative_phase_offset
+  id: variable
+  parameters:
+    comment: ''
+    value: '"FMCOMMS5_relative_phase_offsets.cfg"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1408, 140.0]
+    rotation: 0
+    state: true
+- name: rx_adder
+  id: variable
+  parameters:
+    comment: ''
+    value: '"addr=192.168.10.2"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1088, 84.0]
+    rotation: 0
+    state: true
+- name: samp_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: '10000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1168, 28.0]
+    rotation: 0
+    state: true
+- name: samples_2_avg
+  id: variable
+  parameters:
+    comment: ''
+    value: '2048'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1264, 196.0]
+    rotation: 0
+    state: true
+- name: snapshot_size
+  id: variable
+  parameters:
+    comment: ''
+    value: '2048'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1336, 28.0]
+    rotation: 0
+    state: true
+- name: tone_freq
+  id: variable
+  parameters:
+    comment: ''
+    value: '10000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1088, 28.0]
+    rotation: 0
+    state: true
+- name: CARES_autocorrelate_0
+  id: CARES_autocorrelate
+  parameters:
+    affinity: ''
+    alias: ''
+    avg_method: '1'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: num_array_elements
+    overlap_size: overlap_size
+    snapshot_size: snapshot_size
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [856, 296.0]
+    rotation: 0
+    state: true
+- name: CARES_calibrate_lin_array_0
+  id: CARES_calibrate_lin_array
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    norm_spacing: norm_spacing
+    num_ant_ele: num_array_elements
+    pilot_angle: pilot_angle
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1128, 324.0]
+    rotation: 0
+    state: true
+- name: CARES_phase_correct_hier_0
+  id: CARES_phase_correct_hier
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    config_filename: relative_phase_offsets_file_name
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_ports: num_array_elements
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [592, 296.0]
+    rotation: 0
+    state: true
+- name: CARES_save_antenna_calib_0
+  id: CARES_save_antenna_calib
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    config_filename: antenna_calibration_file_name
+    num_inputs: num_array_elements
+    samples_to_average: samples_2_avg
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [712, 444.0]
+    rotation: 180
+    state: true
+- name: blocks_complex_to_magphase_0
+  id: blocks_complex_to_magphase
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: num_array_elements
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1056, 448.0]
+    rotation: 180
+    state: enabled
+- name: blocks_float_to_complex_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [648, 696.0]
+    rotation: 0
+    state: disabled
+- name: blocks_float_to_complex_1
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [640, 856.0]
+    rotation: 0
+    state: disabled
+- name: blocks_float_to_complex_2
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [648, 776.0]
+    rotation: 0
+    state: disabled
+- name: blocks_float_to_complex_3
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [640, 936.0]
+    rotation: 0
+    state: disabled
+- name: blocks_short_to_float_0
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [456, 804.0]
+    rotation: 0
+    state: disabled
+- name: blocks_short_to_float_1
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [456, 772.0]
+    rotation: 0
+    state: disabled
+- name: blocks_short_to_float_2
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [456, 852.0]
+    rotation: 0
+    state: disabled
+- name: blocks_short_to_float_3
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [456, 884.0]
+    rotation: 0
+    state: disabled
+- name: blocks_short_to_float_4
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [456, 724.0]
+    rotation: 0
+    state: disabled
+- name: blocks_short_to_float_5
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [456, 692.0]
+    rotation: 0
+    state: disabled
+- name: blocks_short_to_float_6
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [456, 932.0]
+    rotation: 0
+    state: disabled
+- name: blocks_short_to_float_7
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [456, 964.0]
+    rotation: 0
+    state: disabled
+- name: iio_device_source_0
+  id: iio_device_source
+  parameters:
+    affinity: ''
+    alias: ''
+    buffer_size: '32768'
+    channels: '["voltage0", "voltage1", "voltage2", "voltage3", "voltage4", "voltage5",
+      "voltage6", "voltage7"]'
+    comment: ''
+    decimation: '1'
+    device: '"cf-ad9361-A"'
+    device_phy: '"ad9361-phy"'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    params: '[]'
+    uri: '"ip:analog.local"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [112, 696.0]
+    rotation: 0
+    state: disabled
+- name: iio_fmcomms5_source_0_0
+  id: iio_fmcomms5_source
+  parameters:
+    affinity: ''
+    alias: ''
+    bandwidth: samp_rate
+    bbdc: 'True'
+    buffer_size: '0x8000'
+    comment: ''
+    filter: ''
+    frequency1: center_freq
+    frequency2: center_freq
+    gain1: '''manual'''
+    gain2: '''manual'''
+    gain3: '''manual'''
+    gain4: '''manual'''
+    manual_gain1: gain
+    manual_gain2: gain
+    manual_gain3: gain
+    manual_gain4: gain
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    quadrature: 'True'
+    rf_port_select: '''A_BALANCED'''
+    rfdc: 'True'
+    rx1_en: 'True'
+    rx2_en: 'True'
+    rx3_en: 'True'
+    rx4_en: 'True'
+    samplerate: samp_rate
+    uri: '"ip:analog.local"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [296, 164.0]
+    rotation: 0
+    state: enabled
+- name: import
+  id: import
+  parameters:
+    alias: ''
+    comment: ''
+    imports: import os
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [280, 24]
+    rotation: 0
+    state: enabled
+
+connections:
+- [CARES_autocorrelate_0, '0', CARES_calibrate_lin_array_0, '0']
+- [CARES_calibrate_lin_array_0, '0', blocks_complex_to_magphase_0, '0']
+- [CARES_phase_correct_hier_0, '0', CARES_autocorrelate_0, '0']
+- [CARES_phase_correct_hier_0, '1', CARES_autocorrelate_0, '1']
+- [CARES_phase_correct_hier_0, '2', CARES_autocorrelate_0, '2']
+- [CARES_phase_correct_hier_0, '3', CARES_autocorrelate_0, '3']
+- [blocks_complex_to_magphase_0, '0', CARES_save_antenna_calib_0, '0']
+- [blocks_complex_to_magphase_0, '1', CARES_save_antenna_calib_0, '1']
+- [blocks_short_to_float_0, '0', blocks_float_to_complex_2, '1']
+- [blocks_short_to_float_1, '0', blocks_float_to_complex_2, '0']
+- [blocks_short_to_float_2, '0', blocks_float_to_complex_1, '0']
+- [blocks_short_to_float_3, '0', blocks_float_to_complex_1, '1']
+- [blocks_short_to_float_4, '0', blocks_float_to_complex_0, '1']
+- [blocks_short_to_float_5, '0', blocks_float_to_complex_0, '0']
+- [blocks_short_to_float_6, '0', blocks_float_to_complex_3, '0']
+- [blocks_short_to_float_7, '0', blocks_float_to_complex_3, '1']
+- [iio_device_source_0, '0', blocks_short_to_float_5, '0']
+- [iio_device_source_0, '1', blocks_short_to_float_4, '0']
+- [iio_device_source_0, '2', blocks_short_to_float_1, '0']
+- [iio_device_source_0, '3', blocks_short_to_float_0, '0']
+- [iio_device_source_0, '4', blocks_short_to_float_2, '0']
+- [iio_device_source_0, '5', blocks_short_to_float_3, '0']
+- [iio_device_source_0, '6', blocks_short_to_float_6, '0']
+- [iio_device_source_0, '7', blocks_short_to_float_7, '0']
+- [iio_fmcomms5_source_0_0, '0', CARES_phase_correct_hier_0, '0']
+- [iio_fmcomms5_source_0_0, '1', CARES_phase_correct_hier_0, '1']
+- [iio_fmcomms5_source_0_0, '2', CARES_phase_correct_hier_0, '2']
+- [iio_fmcomms5_source_0_0, '3', CARES_phase_correct_hier_0, '3']
+
+metadata:
+  file_format: 1

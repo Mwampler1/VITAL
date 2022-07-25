@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1CARES_1_1antenna__correction__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::CARES::antenna_correction_impl</compoundname>
+    <basecompoundref refid="classgr_1_1CARES_1_1antenna__correction" prot="public" virt="non-virtual">gr::CARES::antenna_correction</basecompoundref>
+    <includes refid="antenna__correction__impl_8h" local="no">antenna_correction_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1antenna__correction__impl_1a088b02ae014ba6db5b057c873616a0e5" prot="private" static="no" mutable="no">
+        <type>cx_fcolvec</type>
+        <definition>cx_fcolvec gr::CARES::antenna_correction_impl::d_ComplexGain</definition>
+        <argsstring></argsstring>
+        <name>d_ComplexGain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/antenna_correction_impl.h" line="37" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/antenna_correction_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1antenna__correction__impl_1ac931beec64fc2716f397042b953b1514" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::CARES::antenna_correction_impl::d_num_ant_ele</definition>
+        <argsstring></argsstring>
+        <name>d_num_ant_ele</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/antenna_correction_impl.h" line="38" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/antenna_correction_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1CARES_1_1antenna__correction__impl_1ad911f024f9d0c0c905adfb5e311fa3ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::CARES::antenna_correction_impl::antenna_correction_impl</definition>
+        <argsstring>(int num_ant_ele, char *config_filename)</argsstring>
+        <name>antenna_correction_impl</name>
+        <param>
+          <type>int</type>
+          <declname>num_ant_ele</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>config_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/antenna_correction_impl.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1CARES_1_1antenna__correction__impl_1aa2cba250732f87eea2330ec88aadfe07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::CARES::antenna_correction_impl::~antenna_correction_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~antenna_correction_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/antenna_correction_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1CARES_1_1antenna__correction__impl_1a04d624d456baf562a435c11573c761ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::CARES::antenna_correction_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/antenna_correction_impl.h" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>sync_block</label>
+      </node>
+      <node id="5">
+        <label>gr::CARES::antenna_correction_impl</label>
+        <link refid="classgr_1_1CARES_1_1antenna__correction__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gr::CARES::antenna_correction</label>
+        <link refid="classgr_1_1CARES_1_1antenna__correction"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>sync_block</label>
+      </node>
+      <node id="8">
+        <label>gr::CARES::antenna_correction_impl</label>
+        <link refid="classgr_1_1CARES_1_1antenna__correction__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gr::CARES::antenna_correction</label>
+        <link refid="classgr_1_1CARES_1_1antenna__correction"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/antenna_correction_impl.h" line="35" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/antenna_correction_impl.h" bodystart="34" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classgr_1_1CARES_1_1antenna__correction__impl_1ad911f024f9d0c0c905adfb5e311fa3ac" prot="public" virt="non-virtual"><scope>gr::CARES::antenna_correction_impl</scope><name>antenna_correction_impl</name></member>
+      <member refid="classgr_1_1CARES_1_1antenna__correction__impl_1a088b02ae014ba6db5b057c873616a0e5" prot="private" virt="non-virtual"><scope>gr::CARES::antenna_correction_impl</scope><name>d_ComplexGain</name></member>
+      <member refid="classgr_1_1CARES_1_1antenna__correction__impl_1ac931beec64fc2716f397042b953b1514" prot="private" virt="non-virtual"><scope>gr::CARES::antenna_correction_impl</scope><name>d_num_ant_ele</name></member>
+      <member refid="classgr_1_1CARES_1_1antenna__correction_1ac86db87c5d254f8c76b0fc84596f32c9" prot="public" virt="non-virtual"><scope>gr::CARES::antenna_correction_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1CARES_1_1antenna__correction_1afadb6a24b60bef7861b22077bbff8db9" prot="public" virt="non-virtual"><scope>gr::CARES::antenna_correction_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1CARES_1_1antenna__correction__impl_1a04d624d456baf562a435c11573c761ec" prot="public" virt="non-virtual"><scope>gr::CARES::antenna_correction_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1CARES_1_1antenna__correction__impl_1aa2cba250732f87eea2330ec88aadfe07" prot="public" virt="non-virtual"><scope>gr::CARES::antenna_correction_impl</scope><name>~antenna_correction_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

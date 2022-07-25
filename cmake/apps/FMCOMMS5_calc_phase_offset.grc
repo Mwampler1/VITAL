@@ -1,0 +1,313 @@
+options:
+  parameters:
+    author: ''
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: estimate_X310_TwinRX_constant_phase_offsets_and_save
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: run
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: ''
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [576, 40]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: center_freq
+  id: variable
+  parameters:
+    comment: ''
+    value: '2450000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1168, 20.0]
+    rotation: 0
+    state: true
+- name: directory_config_files
+  id: variable
+  parameters:
+    comment: ''
+    value: '"/tmp"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1152, 132.0]
+    rotation: 0
+    state: true
+- name: gain
+  id: variable
+  parameters:
+    comment: ''
+    value: '60'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1008, 76.0]
+    rotation: 0
+    state: true
+- name: input_variables
+  id: variable_struct
+  parameters:
+    comment: "input_variables: \nContains all the user-defined variables."
+    field0: SampleRate
+    field1: ToneFreq
+    field10: ''
+    field11: ''
+    field12: ''
+    field13: ''
+    field14: ''
+    field15: ''
+    field16: ''
+    field17: ''
+    field18: ''
+    field19: ''
+    field2: CenterFreq
+    field3: Gain
+    field4: NumArrayElements
+    field5: RxAddr
+    field6: DirectoryConfigFiles
+    field7: RelativePhaseOffsets
+    field8: SkipAhead
+    field9: Samples2FindMax
+    value0: '10000000'
+    value1: '10000'
+    value10: '0'
+    value11: '0'
+    value12: '0'
+    value13: '0'
+    value14: '0'
+    value15: '0'
+    value16: '0'
+    value17: '0'
+    value18: '0'
+    value19: '0'
+    value2: '2450000000'
+    value3: '60'
+    value4: '4'
+    value5: '"addr=192.168.10.2"'
+    value6: '"/tmp"'
+    value7: '"measure_X310_TwinRX_relative_phase_offsets_245.cfg"'
+    value8: 2**15
+    value9: 2**11
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [392, 40]
+    rotation: 0
+    state: disabled
+- name: num_array_elements
+  id: variable
+  parameters:
+    comment: ''
+    value: '4'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1072, 76.0]
+    rotation: 0
+    state: true
+- name: rel_phase_offsets_file_name
+  id: variable
+  parameters:
+    comment: ''
+    value: os.path.join(directory_config_files, relative_phase_offset_files)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [576, 108]
+    rotation: 0
+    state: enabled
+- name: relative_phase_offset_files
+  id: variable
+  parameters:
+    comment: ''
+    value: '"FMCOMMS5_relative_phase_offsets.cfg"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1008, 188.0]
+    rotation: 0
+    state: true
+- name: rx_addr
+  id: variable
+  parameters:
+    comment: ''
+    value: '"addr=192.168.10.2"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1008, 132.0]
+    rotation: 0
+    state: true
+- name: samp_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: '10000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1008, 20.0]
+    rotation: 0
+    state: true
+- name: samples_2_find_max
+  id: variable
+  parameters:
+    comment: ''
+    value: '2048'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1208, 76.0]
+    rotation: 0
+    state: true
+- name: skip_ahead
+  id: variable
+  parameters:
+    comment: ''
+    value: '32768'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1256, 20.0]
+    rotation: 0
+    state: true
+- name: tone_freq
+  id: variable
+  parameters:
+    comment: ''
+    value: '10000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1088, 20.0]
+    rotation: 0
+    state: true
+- name: CARES_findmax_and_save_0
+  id: CARES_findmax_and_save
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    config_filename: /tmp/phases.cfg
+    num_inputs: num_array_elements - 1
+    samples_to_findmax: samples_2_find_max
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [904, 424.0]
+    rotation: 0
+    state: true
+- name: CARES_twinrx_phase_offset_est_0
+  id: CARES_twinrx_phase_offset_est
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    n_skip_ahead: skip_ahead
+    num_inputs: num_array_elements
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [592, 400.0]
+    rotation: 0
+    state: true
+- name: iio_fmcomms5_source_0
+  id: iio_fmcomms5_source
+  parameters:
+    affinity: ''
+    alias: ''
+    bandwidth: samp_rate
+    bbdc: 'False'
+    buffer_size: '0x8000'
+    comment: ''
+    filter: ''
+    frequency1: center_freq
+    frequency2: center_freq
+    gain1: '''manual'''
+    gain2: '''manual'''
+    gain3: '''manual'''
+    gain4: '''manual'''
+    manual_gain1: gain
+    manual_gain2: gain
+    manual_gain3: gain
+    manual_gain4: gain
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    quadrature: 'False'
+    rf_port_select: '''A_BALANCED'''
+    rfdc: 'False'
+    rx1_en: 'True'
+    rx2_en: 'True'
+    rx3_en: 'True'
+    rx4_en: 'True'
+    samplerate: samp_rate
+    uri: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [280, 268.0]
+    rotation: 0
+    state: enabled
+- name: import
+  id: import
+  parameters:
+    alias: ''
+    comment: ''
+    imports: import os
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [824, 40]
+    rotation: 0
+    state: enabled
+
+connections:
+- [CARES_twinrx_phase_offset_est_0, '0', CARES_findmax_and_save_0, '0']
+- [CARES_twinrx_phase_offset_est_0, '1', CARES_findmax_and_save_0, '1']
+- [CARES_twinrx_phase_offset_est_0, '2', CARES_findmax_and_save_0, '2']
+- [iio_fmcomms5_source_0, '0', CARES_twinrx_phase_offset_est_0, '0']
+- [iio_fmcomms5_source_0, '1', CARES_twinrx_phase_offset_est_0, '1']
+- [iio_fmcomms5_source_0, '2', CARES_twinrx_phase_offset_est_0, '2']
+- [iio_fmcomms5_source_0, '3', CARES_twinrx_phase_offset_est_0, '3']
+
+metadata:
+  file_format: 1

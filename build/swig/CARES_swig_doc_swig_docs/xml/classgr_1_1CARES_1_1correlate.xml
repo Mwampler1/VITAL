@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1CARES_1_1correlate" kind="class" language="C++" prot="public">
+    <compoundname>gr::CARES::correlate</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_decimator</basecompoundref>
+    <includes refid="correlate_8h" local="no">correlate.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1CARES_1_1correlate_1a278947ad7c57688bc273f84df93e37b3" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1CARES_1_1correlate" kindref="compound">correlate</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;correlate&gt; gr::CARES::correlate::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/correlate.h" line="42" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/correlate.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1CARES_1_1correlate_1ae634327878ea88971bc5515ed957c3c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1CARES_1_1correlate_1a278947ad7c57688bc273f84df93e37b3" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::CARES::correlate::make</definition>
+        <argsstring>(int inputs, int snapshot_size, int overlap_size, int avg_method)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>inputs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>snapshot_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>overlap_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>avg_method</declname>
+        </param>
+        <briefdescription>
+<para>Make an correlate block. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of input streams </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>snapshot_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of each snapshot </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>overlap_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the overlap between successive snapshots </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>avg_method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Use Forward Averaging or Forward-Backward Averaging </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/correlate.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Calculate autocorrelation matrix of input data snapshot. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>gr::CARES::correlate</label>
+        <link refid="classgr_1_1CARES_1_1correlate"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gr::sync_decimator</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>gr::CARES::correlate</label>
+        <link refid="classgr_1_1CARES_1_1correlate"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gr::sync_decimator</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/correlate.h" line="40" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/correlate.h" bodystart="39" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1CARES_1_1correlate_1ae634327878ea88971bc5515ed957c3c4" prot="public" virt="non-virtual"><scope>gr::CARES::correlate</scope><name>make</name></member>
+      <member refid="classgr_1_1CARES_1_1correlate_1a278947ad7c57688bc273f84df93e37b3" prot="public" virt="non-virtual"><scope>gr::CARES::correlate</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

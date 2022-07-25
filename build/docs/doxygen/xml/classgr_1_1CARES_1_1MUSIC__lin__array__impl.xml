@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1CARES_1_1MUSIC__lin__array__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::CARES::MUSIC_lin_array_impl</compoundname>
+    <basecompoundref refid="classgr_1_1CARES_1_1MUSIC__lin__array" prot="public" virt="non-virtual">gr::CARES::MUSIC_lin_array</basecompoundref>
+    <includes refid="MUSIC__lin__array__impl_8h" local="no">MUSIC_lin_array_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1acc30bd066b8acce2a7821d97b328a566" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::CARES::MUSIC_lin_array_impl::d_norm_spacing</definition>
+        <argsstring></argsstring>
+        <name>d_norm_spacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="37" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a2d7519130f48cef2ef0397d041c2832d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::CARES::MUSIC_lin_array_impl::d_num_targets</definition>
+        <argsstring></argsstring>
+        <name>d_num_targets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="38" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1ac5b938e7f70763a65269dae8b545a2ed" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::CARES::MUSIC_lin_array_impl::d_num_ant_ele</definition>
+        <argsstring></argsstring>
+        <name>d_num_ant_ele</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="39" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a1c65a0b548ead4356582a40fca1e9c42" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::CARES::MUSIC_lin_array_impl::d_pspectrum_len</definition>
+        <argsstring></argsstring>
+        <name>d_pspectrum_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="40" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a4428d1949116221d90ffb512b2d3f4e4" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* gr::CARES::MUSIC_lin_array_impl::d_theta</definition>
+        <argsstring></argsstring>
+        <name>d_theta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="41" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a58bd09b4b53ba830359e692c7046a69f" prot="private" static="no" mutable="no">
+        <type>Eigen::VectorXf</type>
+        <definition>Eigen::VectorXf gr::CARES::MUSIC_lin_array_impl::d_array_loc</definition>
+        <argsstring></argsstring>
+        <name>d_array_loc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="42" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a11fd46e44e088b36583ebcfdc7787897" prot="private" static="no" mutable="no">
+        <type>Eigen::MatrixXcf</type>
+        <definition>Eigen::MatrixXcf gr::CARES::MUSIC_lin_array_impl::d_vii_matrix</definition>
+        <argsstring></argsstring>
+        <name>d_vii_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="43" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a3760c5595dfb63d213ce3b6394d23451" prot="private" static="no" mutable="no">
+        <type>Eigen::MatrixXcf</type>
+        <definition>Eigen::MatrixXcf gr::CARES::MUSIC_lin_array_impl::d_vii_matrix_trans</definition>
+        <argsstring></argsstring>
+        <name>d_vii_matrix_trans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="44" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a385196110e13f4f4e4410fda8c34f8bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::CARES::MUSIC_lin_array_impl::MUSIC_lin_array_impl</definition>
+        <argsstring>(float norm_spacing, int num_targets, int inputs, int pspectrum_len)</argsstring>
+        <name>MUSIC_lin_array_impl</name>
+        <param>
+          <type>float</type>
+          <declname>norm_spacing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_targets</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inputs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pspectrum_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a0879da644987edeebbe84ce397c5b3d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::CARES::MUSIC_lin_array_impl::~MUSIC_lin_array_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~MUSIC_lin_array_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1adcb2c6098ddb7893744215271a619ce5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::CARES::MUSIC_lin_array_impl::amv</definition>
+        <argsstring>(Eigen::VectorXcf &amp;v_ii, Eigen::VectorXf &amp;array_loc, float theta)</argsstring>
+        <name>amv</name>
+        <param>
+          <type>Eigen::VectorXcf &amp;</type>
+          <declname>v_ii</declname>
+        </param>
+        <param>
+          <type>Eigen::VectorXf &amp;</type>
+          <declname>array_loc</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a9ea5a35843798eb47d9bb86adadfab45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::CARES::MUSIC_lin_array_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="51">
+        <label>sync_block</label>
+      </node>
+      <node id="50">
+        <label>gr::CARES::MUSIC_lin_array</label>
+        <link refid="classgr_1_1CARES_1_1MUSIC__lin__array"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>gr::CARES::MUSIC_lin_array_impl</label>
+        <link refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="54">
+        <label>sync_block</label>
+      </node>
+      <node id="53">
+        <label>gr::CARES::MUSIC_lin_array</label>
+        <link refid="classgr_1_1CARES_1_1MUSIC__lin__array"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>gr::CARES::MUSIC_lin_array_impl</label>
+        <link refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" line="35" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.h" bodystart="34" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1adcb2c6098ddb7893744215271a619ce5" prot="public" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>amv</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a58bd09b4b53ba830359e692c7046a69f" prot="private" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>d_array_loc</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1acc30bd066b8acce2a7821d97b328a566" prot="private" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>d_norm_spacing</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1ac5b938e7f70763a65269dae8b545a2ed" prot="private" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>d_num_ant_ele</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a2d7519130f48cef2ef0397d041c2832d" prot="private" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>d_num_targets</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a1c65a0b548ead4356582a40fca1e9c42" prot="private" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>d_pspectrum_len</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a4428d1949116221d90ffb512b2d3f4e4" prot="private" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>d_theta</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a11fd46e44e088b36583ebcfdc7787897" prot="private" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>d_vii_matrix</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a3760c5595dfb63d213ce3b6394d23451" prot="private" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>d_vii_matrix_trans</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array_1ac067922dc853c3b90a437f843dc0b11c" prot="public" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a385196110e13f4f4e4410fda8c34f8bc" prot="public" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>MUSIC_lin_array_impl</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array_1a6480d460691875ef26afa2057d5d4da0" prot="public" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a9ea5a35843798eb47d9bb86adadfab45" prot="public" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a0879da644987edeebbe84ce397c5b3d2" prot="public" virt="non-virtual"><scope>gr::CARES::MUSIC_lin_array_impl</scope><name>~MUSIC_lin_array_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

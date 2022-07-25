@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/CARES_swig.i
+gnuradio.i
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/gnuradio.i
+CARES_swig_doc.i
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/CARES_swig_doc.i
+CARES/find_local_max.h
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/CARES/find_local_max.h
+CARES/antenna_correction.h
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/CARES/antenna_correction.h
+CARES/calibrate_lin_array.h
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/CARES/calibrate_lin_array.h
+CARES/MUSIC_lin_array.h
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/CARES/MUSIC_lin_array.h
+CARES/correlate.h
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/CARES/correlate.h
+CARES/find_local_max.h
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/CARES/find_local_max.h
+CARES/antenna_correction.h
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/CARES/antenna_correction.h
+CARES/calibrate_lin_array.h
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/CARES/calibrate_lin_array.h
+CARES/MUSIC_lin_array.h
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/CARES/MUSIC_lin_array.h
+CARES/correlate.h
+/home/rtp/rtp/GNU-Radio/gr-CARES/swig/CARES/correlate.h
+

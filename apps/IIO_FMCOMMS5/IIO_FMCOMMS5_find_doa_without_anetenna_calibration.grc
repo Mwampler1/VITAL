@@ -1,0 +1,724 @@
+options:
+  parameters:
+    author: ''
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: 'From doa: run_MUSIC_lin_array_X310_TwinRX'
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: IIO_FMCOMMS5_find_doa_without_anetenna_calibration
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: IIO_FMCOMMS5_find_doa_without_anetenna_calibration
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 24]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: directory_config_files
+  id: variable
+  parameters:
+    comment: ''
+    value: '"/home/rtp/rtp/GNU-Radio/gr-CARES/apps/IIO_FMCOMMS5/"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [914, 95]
+    rotation: 0
+    state: true
+- name: input_variables
+  id: variable_struct
+  parameters:
+    comment: "input_variables: \nContains all the user-defined variables."
+    field0: ToneFreq
+    field1: SampleRate
+    field10: PSpectrumLength
+    field11: DirectoryConfigFiles
+    field12: RelativePhaseOffsets
+    field13: ''
+    field14: ''
+    field15: ''
+    field16: ''
+    field17: ''
+    field18: ''
+    field19: ''
+    field2: CenterFreq
+    field3: RxAddr
+    field4: Gain
+    field5: NumArrayElements
+    field6: NormSpacing
+    field7: SnapshotSize
+    field8: OverlapSize
+    field9: NumTargets
+    value0: '10000'
+    value1: '10000000'
+    value10: 2**10
+    value11: '"/tmp"'
+    value12: '"measure_X310_TwinRX_relative_phase_offsets_245.cfg"'
+    value13: '0'
+    value14: '0'
+    value15: '0'
+    value16: '0'
+    value17: '0'
+    value18: '0'
+    value19: '0'
+    value2: '2450000000'
+    value3: '"ip:192.168.3.2"'
+    value4: '60'
+    value5: '4'
+    value6: '0.5'
+    value7: 2**11
+    value8: 2**9
+    value9: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2016, 4.0]
+    rotation: 0
+    state: enabled
+- name: norm_spacing
+  id: variable
+  parameters:
+    comment: ''
+    value: '0.500'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1050, 39]
+    rotation: 0
+    state: true
+- name: num_array_elements
+  id: variable
+  parameters:
+    comment: ''
+    value: '4'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [914, 39]
+    rotation: 0
+    state: true
+- name: num_targets
+  id: variable
+  parameters:
+    comment: ''
+    value: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1338, 39]
+    rotation: 0
+    state: true
+- name: overlap_size
+  id: variable
+  parameters:
+    comment: ''
+    value: '512'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1242, 39]
+    rotation: 0
+    state: true
+- name: pspectrum_length
+  id: variable
+  parameters:
+    comment: ''
+    value: '1024'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1433, 39]
+    rotation: 0
+    state: true
+- name: rel_phase_offsets_file_name
+  id: variable
+  parameters:
+    comment: ''
+    value: os.path.join(directory_config_files, relative_phase_offset_files)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1049, 95]
+    rotation: 0
+    state: enabled
+- name: relative_phase_offset_files
+  id: variable
+  parameters:
+    comment: ''
+    value: '"IIO_FMCOMMS5_relative_phase_offsets.txt"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1209, 95]
+    rotation: 0
+    state: true
+- name: snapshot_size
+  id: variable
+  parameters:
+    comment: ''
+    value: '2048'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1146, 39]
+    rotation: 0
+    state: true
+- name: CARES_MUSIC_lin_array_0
+  id: CARES_MUSIC_lin_array
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    norm_spacing: norm_spacing
+    num_inputs: num_array_elements
+    num_targets: num_targets
+    pspectrum_len: pspectrum_length
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1334, 492]
+    rotation: 180
+    state: true
+- name: CARES_autocorrelate_0
+  id: CARES_autocorrelate
+  parameters:
+    affinity: ''
+    alias: ''
+    avg_method: '1'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: num_array_elements
+    overlap_size: overlap_size
+    snapshot_size: snapshot_size
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1298, 312]
+    rotation: 0
+    state: true
+- name: CARES_find_local_max_0
+  id: CARES_find_local_max
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_max_vals: num_targets
+    vector_len: pspectrum_length
+    x_max: '180.0'
+    x_min: '0.0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1054, 473]
+    rotation: 180
+    state: true
+- name: CARES_phase_correct_hier_0
+  id: CARES_phase_correct_hier
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    config_filename: rel_phase_offsets_file_name
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_ports: num_array_elements
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [764, 312]
+    rotation: 0
+    state: enabled
+- name: blocks_float_to_complex_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [510, 214]
+    rotation: 0
+    state: true
+- name: blocks_float_to_complex_0_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [512, 300]
+    rotation: 0
+    state: true
+- name: blocks_float_to_complex_0_0_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [514, 388]
+    rotation: 0
+    state: true
+- name: blocks_float_to_complex_0_0_0_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [514, 475]
+    rotation: 0
+    state: true
+- name: blocks_null_sink_0
+  id: blocks_null_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    bus_structure_sink: '[[0,],]'
+    comment: ''
+    num_inputs: '1'
+    type: float
+    vlen: num_targets
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [819, 484]
+    rotation: 180
+    state: enabled
+- name: blocks_short_to_float_0
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [334, 204]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_0
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [334, 248]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_0_0
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [334, 336]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_0_1
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [334, 423]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_1
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [334, 292]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_1_0
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [334, 467]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_1_0_0
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [333, 511]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_2
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [334, 379]
+    rotation: 0
+    state: true
+- name: iio_device_source_0
+  id: iio_device_source
+  parameters:
+    affinity: ''
+    alias: ''
+    buffer_size: '32768'
+    channels: '["voltage0","voltage1", "voltage2", "voltage3", "voltage4", "voltage5",
+      "voltage6", "voltage7"]'
+    comment: ''
+    decimation: '1'
+    device: '"cf-ad9361-A"'
+    device_phy: '"ad9361-phy"'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    params: '[]'
+    uri: '"10.23.23.40"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [57, 232]
+    rotation: 0
+    state: true
+- name: import
+  id: import
+  parameters:
+    alias: ''
+    comment: ''
+    imports: import os
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [248, 25]
+    rotation: 0
+    state: enabled
+- name: qtgui_number_sink_0
+  id: qtgui_number_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    autoscale: 'False'
+    avg: '0'
+    color1: ("black", "black")
+    color10: ("black", "black")
+    color2: ("black", "black")
+    color3: ("black", "black")
+    color4: ("black", "black")
+    color5: ("black", "black")
+    color6: ("black", "black")
+    color7: ("black", "black")
+    color8: ("black", "black")
+    color9: ("black", "black")
+    comment: ''
+    factor1: '1'
+    factor10: '1'
+    factor2: '1'
+    factor3: '1'
+    factor4: '1'
+    factor5: '1'
+    factor6: '1'
+    factor7: '1'
+    factor8: '1'
+    factor9: '1'
+    graph_type: qtgui.NUM_GRAPH_HORIZ
+    gui_hint: ''
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    max: '1'
+    min: '-1'
+    name: '""'
+    nconnections: '1'
+    type: float
+    unit1: ''
+    unit10: ''
+    unit2: ''
+    unit3: ''
+    unit4: ''
+    unit5: ''
+    unit6: ''
+    unit7: ''
+    unit8: ''
+    unit9: ''
+    update_time: '0.10'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [789, 519]
+    rotation: 180
+    state: true
+- name: qtgui_vector_sink_f_0
+  id: qtgui_vector_sink_f
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    grid: 'True'
+    gui_hint: tab@0
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '""'
+    nconnections: '1'
+    ref_level: '0'
+    showports: 'True'
+    update_time: '0.05'
+    vlen: pspectrum_length
+    width1: '2'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    x_axis_label: '"angle (in degrees)"'
+    x_start: '0'
+    x_step: 180/pspectrum_length
+    x_units: '""'
+    y_axis_label: '"Pseudo-Spectrum (dB)"'
+    y_units: '""'
+    ymax: '0'
+    ymin: '-20'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1030, 572]
+    rotation: 180
+    state: enabled
+- name: tab
+  id: qtgui_tab_widget
+  parameters:
+    alias: ''
+    comment: ''
+    gui_hint: ''
+    label0: Pseudo-Spectrum
+    label1: Angle of Arrival (MUSIC)
+    label10: Tab 10
+    label11: Tab 11
+    label12: Tab 12
+    label13: Tab 13
+    label14: Tab 14
+    label15: Tab 15
+    label16: Tab 16
+    label17: Tab 17
+    label18: Tab 18
+    label19: Tab 19
+    label2: Tab 2
+    label3: Tab 3
+    label4: Tab 4
+    label5: Tab 5
+    label6: Tab 6
+    label7: Tab 7
+    label8: Tab 8
+    label9: Tab 9
+    num_tabs: '2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 120]
+    rotation: 0
+    state: enabled
+
+connections:
+- [CARES_MUSIC_lin_array_0, '0', CARES_find_local_max_0, '0']
+- [CARES_MUSIC_lin_array_0, '0', qtgui_vector_sink_f_0, '0']
+- [CARES_autocorrelate_0, '0', CARES_MUSIC_lin_array_0, '0']
+- [CARES_find_local_max_0, '0', blocks_null_sink_0, '0']
+- [CARES_find_local_max_0, '1', qtgui_number_sink_0, '0']
+- [CARES_phase_correct_hier_0, '0', CARES_autocorrelate_0, '0']
+- [CARES_phase_correct_hier_0, '1', CARES_autocorrelate_0, '1']
+- [CARES_phase_correct_hier_0, '2', CARES_autocorrelate_0, '2']
+- [CARES_phase_correct_hier_0, '3', CARES_autocorrelate_0, '3']
+- [blocks_float_to_complex_0, '0', CARES_phase_correct_hier_0, '0']
+- [blocks_float_to_complex_0_0, '0', CARES_phase_correct_hier_0, '1']
+- [blocks_float_to_complex_0_0_0, '0', CARES_phase_correct_hier_0, '2']
+- [blocks_float_to_complex_0_0_0_0, '0', CARES_phase_correct_hier_0, '3']
+- [blocks_short_to_float_0, '0', blocks_float_to_complex_0, '0']
+- [blocks_short_to_float_0_0, '0', blocks_float_to_complex_0, '1']
+- [blocks_short_to_float_0_0_0, '0', blocks_float_to_complex_0_0, '1']
+- [blocks_short_to_float_0_0_1, '0', blocks_float_to_complex_0_0_0, '1']
+- [blocks_short_to_float_0_1, '0', blocks_float_to_complex_0_0, '0']
+- [blocks_short_to_float_0_1_0, '0', blocks_float_to_complex_0_0_0_0, '0']
+- [blocks_short_to_float_0_1_0_0, '0', blocks_float_to_complex_0_0_0_0, '1']
+- [blocks_short_to_float_0_2, '0', blocks_float_to_complex_0_0_0, '0']
+- [iio_device_source_0, '0', blocks_short_to_float_0, '0']
+- [iio_device_source_0, '1', blocks_short_to_float_0_0, '0']
+- [iio_device_source_0, '2', blocks_short_to_float_0_1, '0']
+- [iio_device_source_0, '3', blocks_short_to_float_0_0_0, '0']
+- [iio_device_source_0, '4', blocks_short_to_float_0_2, '0']
+- [iio_device_source_0, '5', blocks_short_to_float_0_0_1, '0']
+- [iio_device_source_0, '6', blocks_short_to_float_0_1_0, '0']
+- [iio_device_source_0, '7', blocks_short_to_float_0_1_0_0, '0']
+
+metadata:
+  file_format: 1

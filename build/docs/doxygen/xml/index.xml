@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1CARES_1_1antenna__correction" kind="class"><name>gr::CARES::antenna_correction</name>
+    <member refid="classgr_1_1CARES_1_1antenna__correction_1afadb6a24b60bef7861b22077bbff8db9" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1CARES_1_1antenna__correction_1ac86db87c5d254f8c76b0fc84596f32c9" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1antenna__correction__impl" kind="class"><name>gr::CARES::antenna_correction_impl</name>
+    <member refid="classgr_1_1CARES_1_1antenna__correction__impl_1a088b02ae014ba6db5b057c873616a0e5" kind="variable"><name>d_ComplexGain</name></member>
+    <member refid="classgr_1_1CARES_1_1antenna__correction__impl_1ac931beec64fc2716f397042b953b1514" kind="variable"><name>d_num_ant_ele</name></member>
+    <member refid="classgr_1_1CARES_1_1antenna__correction__impl_1ad911f024f9d0c0c905adfb5e311fa3ac" kind="function"><name>antenna_correction_impl</name></member>
+    <member refid="classgr_1_1CARES_1_1antenna__correction__impl_1aa2cba250732f87eea2330ec88aadfe07" kind="function"><name>~antenna_correction_impl</name></member>
+    <member refid="classgr_1_1CARES_1_1antenna__correction__impl_1a04d624d456baf562a435c11573c761ec" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1calibrate__lin__array" kind="class"><name>gr::CARES::calibrate_lin_array</name>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array_1a1111d31ca441acbafc7223d672be36c9" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array_1a83490747f64a06d5e20e742ba2f2354f" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1calibrate__lin__array__impl" kind="class"><name>gr::CARES::calibrate_lin_array_impl</name>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1af2b4fd79fdfdbcca05e7ec90fb489b36" kind="variable"><name>d_norm_spacing</name></member>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1ad53c67ad78eb0d053935139bbb71eaab" kind="variable"><name>d_num_ant_ele</name></member>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a3c2494d7c759d21d1168e36fd0447c4b" kind="variable"><name>d_pilot_angle</name></member>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1adaf9548d442781dde5bcbabcc4b2cdd9" kind="variable"><name>d_array_loc</name></member>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a18e601de73aa9e3b36dab07ccd2ace0e" kind="variable"><name>d_diagmat_v_vec</name></member>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1aecac899eb662e610781ad16ccca8861c" kind="variable"><name>d_diagmat_v_vec_conj</name></member>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a080a192dccf475883da335815c20e166" kind="function"><name>calibrate_lin_array_impl</name></member>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1acf2c4e0706e8aba6644da870a794aab1" kind="function"><name>~calibrate_lin_array_impl</name></member>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a15533e5d7e96c36fede14d893f46a635" kind="function"><name>amv</name></member>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a1742d9a41bdcf2a35b91353bc970f3ca" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1correlate" kind="class"><name>gr::CARES::correlate</name>
+    <member refid="classgr_1_1CARES_1_1correlate_1a278947ad7c57688bc273f84df93e37b3" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1CARES_1_1correlate_1ae634327878ea88971bc5515ed957c3c4" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1correlate__impl" kind="class"><name>gr::CARES::correlate_impl</name>
+    <member refid="classgr_1_1CARES_1_1correlate__impl_1a313cdff6fd6df664cafabc9f943c3717" kind="variable"><name>d_num_inputs</name></member>
+    <member refid="classgr_1_1CARES_1_1correlate__impl_1a78e790e8bb6dd490a77df66c8eec8c9d" kind="variable"><name>d_snapshot_size</name></member>
+    <member refid="classgr_1_1CARES_1_1correlate__impl_1af5f56c7add29fc2808e228db1693815c" kind="variable"><name>d_overlap_size</name></member>
+    <member refid="classgr_1_1CARES_1_1correlate__impl_1a10ab3c8e3d43334bfa2b519f23d46d66" kind="variable"><name>d_avg_method</name></member>
+    <member refid="classgr_1_1CARES_1_1correlate__impl_1a37b3c4c638852b24e25ef5fff515bc0b" kind="variable"><name>d_nonoverlap_size</name></member>
+    <member refid="classgr_1_1CARES_1_1correlate__impl_1a4a73f6b35f7c8c88e252177a36d77ce9" kind="variable"><name>d_J</name></member>
+    <member refid="classgr_1_1CARES_1_1correlate__impl_1a3e5ef8e55223941429aa0b41fb4998d2" kind="variable"><name>d_input_matrix</name></member>
+    <member refid="classgr_1_1CARES_1_1correlate__impl_1a495795c829f18de5ffcd1848978e2d2c" kind="function"><name>correlate_impl</name></member>
+    <member refid="classgr_1_1CARES_1_1correlate__impl_1a14496156f197a0c99ac9fd7615a5a56a" kind="function"><name>~correlate_impl</name></member>
+    <member refid="classgr_1_1CARES_1_1correlate__impl_1ab3e8a785bea36deb73e9828a6f1f6512" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1find__local__max" kind="class"><name>gr::CARES::find_local_max</name>
+    <member refid="classgr_1_1CARES_1_1find__local__max_1a9ddae5f67551dc6800bf857e1e13846b" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1CARES_1_1find__local__max_1a4751db154bbe74bf9f1e7a19de2ab5a8" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1find__local__max__impl" kind="class"><name>gr::CARES::find_local_max_impl</name>
+    <member refid="classgr_1_1CARES_1_1find__local__max__impl_1aa40334a110c08fd37480cc3bdd18c5cb" kind="variable"><name>d_num_max_vals</name></member>
+    <member refid="classgr_1_1CARES_1_1find__local__max__impl_1a75524fcf2010ce950175c946302a7ee1" kind="variable"><name>d_vector_len</name></member>
+    <member refid="classgr_1_1CARES_1_1find__local__max__impl_1afe429ac2edea884c96be631da232e19e" kind="variable"><name>d_x_min</name></member>
+    <member refid="classgr_1_1CARES_1_1find__local__max__impl_1a724d38d4025d5620e5456a1c6041a02b" kind="variable"><name>d_x_max</name></member>
+    <member refid="classgr_1_1CARES_1_1find__local__max__impl_1a894a927b8eb94f9c63d4781bb00da6fc" kind="variable"><name>d_x_axis</name></member>
+    <member refid="classgr_1_1CARES_1_1find__local__max__impl_1acf329642e26be86a9385a6e27a910536" kind="variable"><name>find_local_peak_indxs</name></member>
+    <member refid="classgr_1_1CARES_1_1find__local__max__impl_1a312b8db6a2cb5c7906c51edac6a3f7c4" kind="function"><name>find_local_max_impl</name></member>
+    <member refid="classgr_1_1CARES_1_1find__local__max__impl_1a327e68b0ef4c7ee4db68e1035138d2ef" kind="function"><name>~find_local_max_impl</name></member>
+    <member refid="classgr_1_1CARES_1_1find__local__max__impl_1aef935d4f9491c48b771ced24b4e60f1f" kind="function"><name>work</name></member>
+    <member refid="classgr_1_1CARES_1_1find__local__max__impl_1a2ae009ea52423b521af809c0e164cbba" kind="function"><name>find_one_local_peak_indx</name></member>
+    <member refid="classgr_1_1CARES_1_1find__local__max__impl_1a368ac3365df0c710ca61648a149f32d3" kind="function"><name>find_more_than_one_local_peak_indxs</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1MUSIC__lin__array" kind="class"><name>gr::CARES::MUSIC_lin_array</name>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array_1a6480d460691875ef26afa2057d5d4da0" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array_1ac067922dc853c3b90a437f843dc0b11c" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl" kind="class"><name>gr::CARES::MUSIC_lin_array_impl</name>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1acc30bd066b8acce2a7821d97b328a566" kind="variable"><name>d_norm_spacing</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a2d7519130f48cef2ef0397d041c2832d" kind="variable"><name>d_num_targets</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1ac5b938e7f70763a65269dae8b545a2ed" kind="variable"><name>d_num_ant_ele</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a1c65a0b548ead4356582a40fca1e9c42" kind="variable"><name>d_pspectrum_len</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a4428d1949116221d90ffb512b2d3f4e4" kind="variable"><name>d_theta</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a58bd09b4b53ba830359e692c7046a69f" kind="variable"><name>d_array_loc</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a11fd46e44e088b36583ebcfdc7787897" kind="variable"><name>d_vii_matrix</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a3760c5595dfb63d213ce3b6394d23451" kind="variable"><name>d_vii_matrix_trans</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a385196110e13f4f4e4410fda8c34f8bc" kind="function"><name>MUSIC_lin_array_impl</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a0879da644987edeebbe84ce397c5b3d2" kind="function"><name>~MUSIC_lin_array_impl</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1adcb2c6098ddb7893744215271a619ce5" kind="function"><name>amv</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array__impl_1a9ea5a35843798eb47d9bb86adadfab45" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="namespacearma" kind="namespace"><name>arma</name>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1CARES" kind="namespace"><name>gr::CARES</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="antenna__correction_8h" kind="file"><name>antenna_correction.h</name>
+  </compound>
+  <compound refid="antenna__correction__impl_8h" kind="file"><name>antenna_correction_impl.h</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a13e8645dd8c2ce107899b7bbd6a0838d" kind="define"><name>CARES_API</name></member>
+  </compound>
+  <compound refid="calibrate__lin__array_8h" kind="file"><name>calibrate_lin_array.h</name>
+  </compound>
+  <compound refid="calibrate__lin__array__impl_8h" kind="file"><name>calibrate_lin_array_impl.h</name>
+  </compound>
+  <compound refid="correlate_8h" kind="file"><name>correlate.h</name>
+  </compound>
+  <compound refid="correlate__impl_8h" kind="file"><name>correlate_impl.h</name>
+  </compound>
+  <compound refid="find__local__max_8h" kind="file"><name>find_local_max.h</name>
+  </compound>
+  <compound refid="find__local__max__impl_8h" kind="file"><name>find_local_max_impl.h</name>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="MUSIC__lin__array_8h" kind="file"><name>MUSIC_lin_array.h</name>
+  </compound>
+  <compound refid="MUSIC__lin__array__impl_8h" kind="file"><name>MUSIC_lin_array_impl.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_e448d07e4cc2907c0d235950f31920a2" kind="dir"><name>CARES</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

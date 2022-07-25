@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegr_1_1CARES" kind="namespace" language="C++">
+    <compoundname>gr::CARES</compoundname>
+    <innerclass refid="classgr_1_1CARES_1_1antenna__correction" prot="public">gr::CARES::antenna_correction</innerclass>
+    <innerclass refid="classgr_1_1CARES_1_1calibrate__lin__array" prot="public">gr::CARES::calibrate_lin_array</innerclass>
+    <innerclass refid="classgr_1_1CARES_1_1correlate" prot="public">gr::CARES::correlate</innerclass>
+    <innerclass refid="classgr_1_1CARES_1_1find__local__max" prot="public">gr::CARES::find_local_max</innerclass>
+    <innerclass refid="classgr_1_1CARES_1_1MUSIC__lin__array" prot="public">gr::CARES::MUSIC_lin_array</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/antenna_correction.h" line="30" column="1"/>
+  </compounddef>
+</doxygen>

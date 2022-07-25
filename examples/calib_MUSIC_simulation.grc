@@ -1,0 +1,559 @@
+options:
+  parameters:
+    author: ''
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: no_gui
+    hier_block_src_path: '.:'
+    id: run_calib_lin_array_simulation
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: run
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: ''
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 8]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: amv0
+  id: variable
+  parameters:
+    comment: ''
+    value: numpy.multiply(ant_coeffs, amv0_true)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [336, 68.0]
+    rotation: 0
+    state: enabled
+- name: amv0_true
+  id: variable
+  parameters:
+    comment: ''
+    value: numpy.exp(-1j*ant_locs*2*numpy.pi*numpy.cos(pilot_theta0))
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [336, 8]
+    rotation: 0
+    state: enabled
+- name: ant_coeffs
+  id: variable
+  parameters:
+    comment: ''
+    value: ant_gains*numpy.exp(1j*ant_phases)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [520, 68.0]
+    rotation: 0
+    state: enabled
+- name: ant_gains
+  id: variable
+  parameters:
+    comment: ''
+    value: numpy.array([ 0.94984789,  0.4544107 ,  0.34649469,  0.25083929])
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [992, 60.0]
+    rotation: 180
+    state: true
+- name: ant_locs
+  id: variable
+  parameters:
+    comment: ''
+    value: numpy.dot(0.5, numpy.arange(num_array_elements/2, -input_variables.NumArrayElements/2,
+      -1) if (num_array_elements%2==1) else numpy.arange(num_array_elements/2-0.5,
+      -num_array_elements/2-0.5, -1))
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [528, 8]
+    rotation: 0
+    state: enabled
+- name: ant_phases
+  id: variable
+  parameters:
+    comment: ''
+    value: numpy.array([ 0.28647672,  5.27248071,  2.71271102,  1.36970886])
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1152, 4.0]
+    rotation: 180
+    state: true
+- name: antenna_calibration
+  id: variable
+  parameters:
+    comment: ''
+    value: '"calibration_lin_array_simulated.cfg"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [992, 4.0]
+    rotation: 180
+    state: true
+- name: antenna_calibration_file_name
+  id: variable
+  parameters:
+    comment: ''
+    value: os.path.join(directory_config_files, antenna_calibration)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1152, 116.0]
+    rotation: 0
+    state: enabled
+- name: array_manifold_matrix
+  id: variable
+  parameters:
+    comment: ''
+    value: numpy.array([amv0]).transpose()
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [352, 132.0]
+    rotation: 0
+    state: enabled
+- name: directory_config_files
+  id: variable
+  parameters:
+    comment: ''
+    value: '"/home/rtp/rtp/GNU-Radio/gr-CARES/examples/"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1168, 60.0]
+    rotation: 180
+    state: true
+- name: input_variables
+  id: variable_struct
+  parameters:
+    comment: "input_variables: \nContains all the user-defined variables."
+    field0: SampleRate
+    field1: ToneFreq1
+    field10: PilotAngleDegrees
+    field11: DirectoryConfigFiles
+    field12: AntennaCalibration
+    field13: Samples2Avg
+    field14: ''
+    field15: ''
+    field16: ''
+    field17: ''
+    field18: ''
+    field19: ''
+    field2: ToneFreq2
+    field3: NormSpacing
+    field4: NumArrayElements
+    field5: PSpectrumLength
+    field6: SnapshotSize
+    field7: OverlapSize
+    field8: AntGains
+    field9: AntPhases
+    value0: '3200000'
+    value1: '10000'
+    value10: '30.0'
+    value11: '"/tmp"'
+    value12: '"calibration_lin_array_simulated.cfg"'
+    value13: 2**11
+    value14: '0'
+    value15: '0'
+    value16: '0'
+    value17: '0'
+    value18: '0'
+    value19: '0'
+    value2: '20000'
+    value3: '0.5'
+    value4: '4'
+    value5: 2**10
+    value6: 2**11
+    value7: 2**9
+    value8: numpy.array([ 0.94984789,  0.4544107 ,  0.34649469,  0.25083929])
+    value9: numpy.array([ 0.28647672,  5.27248071,  2.71271102,  1.36970886])
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [16, 96]
+    rotation: 0
+    state: enabled
+- name: norm_spacing
+  id: variable
+  parameters:
+    comment: ''
+    value: '0.500'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1408, 116.0]
+    rotation: 180
+    state: true
+- name: num_array_elements
+  id: variable
+  parameters:
+    comment: ''
+    value: '4'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [992, 172.0]
+    rotation: 180
+    state: true
+- name: num_targets
+  id: variable
+  parameters:
+    comment: ''
+    value: '2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1216, 172.0]
+    rotation: 180
+    state: true
+- name: overlap_size
+  id: variable
+  parameters:
+    comment: ''
+    value: '512'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1320, 4.0]
+    rotation: 180
+    state: true
+- name: pilot_angle_degrees
+  id: variable
+  parameters:
+    comment: ''
+    value: '30'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [992, 116.0]
+    rotation: 0
+    state: true
+- name: pilot_theta0
+  id: variable
+  parameters:
+    comment: ''
+    value: numpy.pi*pilot_angle_degrees/180
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [216, 8]
+    rotation: 0
+    state: enabled
+- name: pspectrum_length
+  id: variable
+  parameters:
+    comment: ''
+    value: '1024'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1304, 60.0]
+    rotation: 180
+    state: true
+- name: sample_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: '320000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1400, 172.0]
+    rotation: 180
+    state: true
+- name: samples_2_avg
+  id: variable
+  parameters:
+    comment: ''
+    value: '2048'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1424, 60.0]
+    rotation: 0
+    state: true
+- name: snapshot_size
+  id: variable
+  parameters:
+    comment: ''
+    value: '2048'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1312, 116.0]
+    rotation: 180
+    state: true
+- name: tone_freq_1
+  id: variable
+  parameters:
+    comment: ''
+    value: '10000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1312, 172.0]
+    rotation: 180
+    state: true
+- name: tone_freq_2
+  id: variable
+  parameters:
+    comment: ''
+    value: '20000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1128, 172.0]
+    rotation: 180
+    state: true
+- name: CARES_calibrate_lin_array_0
+  id: CARES_calibrate_lin_array
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    norm_spacing: norm_spacing
+    num_ant_ele: num_array_elements
+    pilot_angle: pilot_angle_degrees
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1144, 260.0]
+    rotation: 0
+    state: true
+- name: CARES_save_antenna_calib_0
+  id: CARES_save_antenna_calib
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    config_filename: calibration_lin_array_simulated.cfg
+    num_inputs: num_array_elements
+    samples_to_average: samples_2_avg
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [816, 396.0]
+    rotation: 180
+    state: true
+- name: analog_noise_source_x_0_0_0
+  id: analog_noise_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: '0.5'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    noise_type: analog.GR_GAUSSIAN
+    seed: '0'
+    type: complex
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [208, 504]
+    rotation: 0
+    state: enabled
+- name: analog_sig_source_x_0_0
+  id: analog_sig_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: '1'
+    comment: ''
+    freq: tone_freq_2
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    phase: '0'
+    samp_rate: sample_rate
+    type: complex
+    waveform: analog.GR_COS_WAVE
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [216, 232]
+    rotation: 0
+    state: enabled
+- name: aoa_autocorrelate_0
+  id: aoa_autocorrelate
+  parameters:
+    affinity: ''
+    alias: ''
+    avg_method: '0'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: num_array_elements
+    overlap_size: overlap_size
+    snapshot_size: snapshot_size
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [856, 232.0]
+    rotation: 0
+    state: true
+- name: blocks_add_xx_0_0
+  id: blocks_add_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [408, 448]
+    rotation: 0
+    state: enabled
+- name: blocks_complex_to_magphase_0
+  id: blocks_complex_to_magphase
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: num_array_elements
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1152, 384.0]
+    rotation: 180
+    state: enabled
+- name: blocks_multiply_matrix_xx_0
+  id: blocks_multiply_matrix_xx
+  parameters:
+    A: array_manifold_matrix
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    tag_propagation_policy: gr.TPP_ALL_TO_ALL
+    type: complex
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [608, 232.0]
+    rotation: 0
+    state: enabled
+- name: blocks_throttle_0_0
+  id: blocks_throttle
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    ignoretag: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_second: sample_rate
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [508.0, 352]
+    rotation: 90
+    state: enabled
+- name: import_0
+  id: import
+  parameters:
+    alias: ''
+    comment: ''
+    imports: import numpy
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [720, 8]
+    rotation: 0
+    state: enabled
+- name: import_1
+  id: import
+  parameters:
+    alias: ''
+    comment: ''
+    imports: import os
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [840, 8]
+    rotation: 0
+    state: enabled
+
+connections:
+- [CARES_calibrate_lin_array_0, '0', blocks_complex_to_magphase_0, '0']
+- [analog_noise_source_x_0_0_0, '0', blocks_add_xx_0_0, '1']
+- [analog_sig_source_x_0_0, '0', blocks_add_xx_0_0, '0']
+- [aoa_autocorrelate_0, '0', CARES_calibrate_lin_array_0, '0']
+- [blocks_add_xx_0_0, '0', blocks_throttle_0_0, '0']
+- [blocks_complex_to_magphase_0, '0', CARES_save_antenna_calib_0, '0']
+- [blocks_complex_to_magphase_0, '1', CARES_save_antenna_calib_0, '1']
+- [blocks_multiply_matrix_xx_0, '0', aoa_autocorrelate_0, '0']
+- [blocks_multiply_matrix_xx_0, '1', aoa_autocorrelate_0, '1']
+- [blocks_multiply_matrix_xx_0, '2', aoa_autocorrelate_0, '2']
+- [blocks_multiply_matrix_xx_0, '3', aoa_autocorrelate_0, '3']
+- [blocks_throttle_0_0, '0', blocks_multiply_matrix_xx_0, '0']
+
+metadata:
+  file_format: 1

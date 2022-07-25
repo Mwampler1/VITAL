@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1CARES_1_1antenna__correction" kind="class" language="C++" prot="public">
+    <compoundname>gr::CARES::antenna_correction</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1CARES_1_1antenna__correction__impl" prot="public" virt="non-virtual">gr::CARES::antenna_correction_impl</derivedcompoundref>
+    <includes refid="antenna__correction_8h" local="no">antenna_correction.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1CARES_1_1antenna__correction_1afadb6a24b60bef7861b22077bbff8db9" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1CARES_1_1antenna__correction" kindref="compound">antenna_correction</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;antenna_correction&gt; gr::CARES::antenna_correction::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/antenna_correction.h" line="44" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/antenna_correction.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1CARES_1_1antenna__correction_1ac86db87c5d254f8c76b0fc84596f32c9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1CARES_1_1antenna__correction_1afadb6a24b60bef7861b22077bbff8db9" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::CARES::antenna_correction::make</definition>
+        <argsstring>(int num_ant_ele, char *config_filename)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>num_ant_ele</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>config_filename</declname>
+        </param>
+        <briefdescription>
+<para>Make a block to correct a correlation matrix for non-uniform antenna gain and phase. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_ant_ele</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of antenna elements </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Config file consisting of antenna calibration values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/antenna_correction.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Performs a scaling operation on a correlation matrix. </para>    </briefdescription>
+    <detaileddescription>
+<para>This block takes a correlation matrix of size (number of antenna elements x number of antenna elements) as input and multiplies it with a diagonal matrix of size (number of antenna elements x number of antenna elements) using calibration values retrieved from a config file. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>sync_block</label>
+      </node>
+      <node id="2">
+        <label>gr::CARES::antenna_correction_impl</label>
+        <link refid="classgr_1_1CARES_1_1antenna__correction__impl"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>gr::CARES::antenna_correction</label>
+        <link refid="classgr_1_1CARES_1_1antenna__correction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>sync_block</label>
+      </node>
+      <node id="3">
+        <label>gr::CARES::antenna_correction</label>
+        <link refid="classgr_1_1CARES_1_1antenna__correction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/antenna_correction.h" line="42" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/include/CARES/antenna_correction.h" bodystart="41" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1CARES_1_1antenna__correction_1ac86db87c5d254f8c76b0fc84596f32c9" prot="public" virt="non-virtual"><scope>gr::CARES::antenna_correction</scope><name>make</name></member>
+      <member refid="classgr_1_1CARES_1_1antenna__correction_1afadb6a24b60bef7861b22077bbff8db9" prot="public" virt="non-virtual"><scope>gr::CARES::antenna_correction</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

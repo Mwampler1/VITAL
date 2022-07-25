@@ -1,0 +1,461 @@
+options:
+  parameters:
+    author: megan
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: 'From doa: view_X310_TwinRX_op_with_corrected_phase_offsets'
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: IIO_FMCOMMS5_view_corrected_phase_offsets
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: IIO_FMCOMMS5_view_corrected_phase_offsets
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 8]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: directory_config_files
+  id: variable
+  parameters:
+    comment: ''
+    value: '"/home/rtp/rtp/GNU-Radio/gr-CARES/apps/IIO_FMCOMMS5/"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [930, 22]
+    rotation: 0
+    state: true
+- name: rel_phase_offsets_file_name
+  id: variable
+  parameters:
+    comment: ''
+    value: os.path.join(directory_config_files, relative_phase_offset_files)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1065, 22]
+    rotation: 0
+    state: enabled
+- name: relative_phase_offset_files
+  id: variable
+  parameters:
+    comment: ''
+    value: '"IIO_FMCOMMS5_relative_phase_offsets.txt"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1225, 22]
+    rotation: 0
+    state: true
+- name: samp_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: '10000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [287, 7]
+    rotation: 0
+    state: enabled
+- name: CARES_phase_correct_hier_0
+  id: CARES_phase_correct_hier
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    config_filename: rel_phase_offsets_file_name
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_ports: '4'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [907, 283]
+    rotation: 0
+    state: true
+- name: blocks_float_to_complex_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [654, 184]
+    rotation: 0
+    state: true
+- name: blocks_float_to_complex_0_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [652, 270]
+    rotation: 0
+    state: true
+- name: blocks_float_to_complex_0_0_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [653, 357]
+    rotation: 0
+    state: true
+- name: blocks_float_to_complex_0_0_0_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [653, 447]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [474, 174]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_0
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [474, 218]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_0_0
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [474, 306]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_0_1
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [474, 393]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_1
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [474, 262]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_1_0
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [474, 437]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_1_0_0
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [473, 481]
+    rotation: 0
+    state: true
+- name: blocks_short_to_float_0_2
+  id: blocks_short_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [474, 349]
+    rotation: 0
+    state: true
+- name: iio_device_source_0
+  id: iio_device_source
+  parameters:
+    affinity: ''
+    alias: ''
+    buffer_size: '32768'
+    channels: '["voltage0","voltage1", "voltage2", "voltage3", "voltage4", "voltage5",
+      "voltage6", "voltage7"]'
+    comment: ''
+    decimation: '1'
+    device: '"cf-ad9361-A"'
+    device_phy: '"ad9361-phy"'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    params: '[]'
+    uri: '"10.23.23.40"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [197, 202]
+    rotation: 0
+    state: true
+- name: import
+  id: import
+  parameters:
+    alias: ''
+    comment: ''
+    imports: import os
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [192, 8]
+    rotation: 0
+    state: enabled
+- name: qtgui_time_sink_x_0
+  id: qtgui_time_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'True'
+    axislabels: 'True'
+    color1: blue
+    color10: dark blue
+    color2: red
+    color3: green
+    color4: black
+    color5: cyan
+    color6: magenta
+    color7: yellow
+    color8: dark red
+    color9: dark green
+    comment: ''
+    ctrlpanel: 'False'
+    entags: 'False'
+    grid: 'False'
+    gui_hint: ''
+    label1: Signal 1
+    label10: Signal 10
+    label2: Signal 2
+    label3: Signal 3
+    label4: Signal 4
+    label5: Signal 5
+    label6: Signal 6
+    label7: Signal 7
+    label8: Signal 8
+    label9: Signal 9
+    legend: 'True'
+    marker1: '-1'
+    marker10: '-1'
+    marker2: '-1'
+    marker3: '-1'
+    marker4: '-1'
+    marker5: '-1'
+    marker6: '-1'
+    marker7: '-1'
+    marker8: '-1'
+    marker9: '-1'
+    name: '""'
+    nconnections: '4'
+    size: '1024'
+    srate: samp_rate
+    stemplot: 'False'
+    style1: '1'
+    style10: '1'
+    style2: '1'
+    style3: '1'
+    style4: '1'
+    style5: '1'
+    style6: '1'
+    style7: '1'
+    style8: '1'
+    style9: '1'
+    tr_chan: '0'
+    tr_delay: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_tag: '""'
+    type: complex
+    update_time: '0.5'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    ylabel: Amplitude
+    ymax: '1'
+    ymin: '-1'
+    yunit: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1235, 282]
+    rotation: 0
+    state: true
+
+connections:
+- [CARES_phase_correct_hier_0, '0', qtgui_time_sink_x_0, '0']
+- [CARES_phase_correct_hier_0, '1', qtgui_time_sink_x_0, '1']
+- [CARES_phase_correct_hier_0, '2', qtgui_time_sink_x_0, '2']
+- [CARES_phase_correct_hier_0, '3', qtgui_time_sink_x_0, '3']
+- [blocks_float_to_complex_0, '0', CARES_phase_correct_hier_0, '0']
+- [blocks_float_to_complex_0_0, '0', CARES_phase_correct_hier_0, '1']
+- [blocks_float_to_complex_0_0_0, '0', CARES_phase_correct_hier_0, '2']
+- [blocks_float_to_complex_0_0_0_0, '0', CARES_phase_correct_hier_0, '3']
+- [blocks_short_to_float_0, '0', blocks_float_to_complex_0, '0']
+- [blocks_short_to_float_0_0, '0', blocks_float_to_complex_0, '1']
+- [blocks_short_to_float_0_0_0, '0', blocks_float_to_complex_0_0, '1']
+- [blocks_short_to_float_0_0_1, '0', blocks_float_to_complex_0_0_0, '1']
+- [blocks_short_to_float_0_1, '0', blocks_float_to_complex_0_0, '0']
+- [blocks_short_to_float_0_1_0, '0', blocks_float_to_complex_0_0_0_0, '0']
+- [blocks_short_to_float_0_1_0_0, '0', blocks_float_to_complex_0_0_0_0, '1']
+- [blocks_short_to_float_0_2, '0', blocks_float_to_complex_0_0_0, '0']
+- [iio_device_source_0, '0', blocks_short_to_float_0, '0']
+- [iio_device_source_0, '1', blocks_short_to_float_0_0, '0']
+- [iio_device_source_0, '2', blocks_short_to_float_0_1, '0']
+- [iio_device_source_0, '3', blocks_short_to_float_0_0_0, '0']
+- [iio_device_source_0, '4', blocks_short_to_float_0_2, '0']
+- [iio_device_source_0, '5', blocks_short_to_float_0_0_1, '0']
+- [iio_device_source_0, '6', blocks_short_to_float_0_1_0, '0']
+- [iio_device_source_0, '7', blocks_short_to_float_0_1_0_0, '0']
+
+metadata:
+  file_format: 1

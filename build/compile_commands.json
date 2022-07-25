@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/rtp/rtp/GNU-Radio/gr-CARES/build/lib",
+  "command": "/usr/bin/c++  -DGR_CTRLPORT -Dgnuradio_CARES_EXPORTS -I/usr/include/eigen3 -I/home/rtp/rtp/GNU-Radio/gr-CARES/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-CARES.dir/find_local_max_impl.cc.o -c /home/rtp/rtp/GNU-Radio/gr-CARES/lib/find_local_max_impl.cc",
+  "file": "/home/rtp/rtp/GNU-Radio/gr-CARES/lib/find_local_max_impl.cc"
+},
+{
+  "directory": "/home/rtp/rtp/GNU-Radio/gr-CARES/build/lib",
+  "command": "/usr/bin/c++  -DGR_CTRLPORT -Dgnuradio_CARES_EXPORTS -I/usr/include/eigen3 -I/home/rtp/rtp/GNU-Radio/gr-CARES/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-CARES.dir/antenna_correction_impl.cc.o -c /home/rtp/rtp/GNU-Radio/gr-CARES/lib/antenna_correction_impl.cc",
+  "file": "/home/rtp/rtp/GNU-Radio/gr-CARES/lib/antenna_correction_impl.cc"
+},
+{
+  "directory": "/home/rtp/rtp/GNU-Radio/gr-CARES/build/lib",
+  "command": "/usr/bin/c++  -DGR_CTRLPORT -Dgnuradio_CARES_EXPORTS -I/usr/include/eigen3 -I/home/rtp/rtp/GNU-Radio/gr-CARES/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-CARES.dir/calibrate_lin_array_impl.cc.o -c /home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.cc",
+  "file": "/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.cc"
+},
+{
+  "directory": "/home/rtp/rtp/GNU-Radio/gr-CARES/build/lib",
+  "command": "/usr/bin/c++  -DGR_CTRLPORT -Dgnuradio_CARES_EXPORTS -I/usr/include/eigen3 -I/home/rtp/rtp/GNU-Radio/gr-CARES/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-CARES.dir/MUSIC_lin_array_impl.cc.o -c /home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.cc",
+  "file": "/home/rtp/rtp/GNU-Radio/gr-CARES/lib/MUSIC_lin_array_impl.cc"
+},
+{
+  "directory": "/home/rtp/rtp/GNU-Radio/gr-CARES/build/lib",
+  "command": "/usr/bin/c++  -DGR_CTRLPORT -Dgnuradio_CARES_EXPORTS -I/usr/include/eigen3 -I/home/rtp/rtp/GNU-Radio/gr-CARES/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-CARES.dir/correlate_impl.cc.o -c /home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.cc",
+  "file": "/home/rtp/rtp/GNU-Radio/gr-CARES/lib/correlate_impl.cc"
+},
+{
+  "directory": "/home/rtp/rtp/GNU-Radio/gr-CARES/build/swig",
+  "command": "/usr/bin/c++   -I/usr/include/eigen3  -O3 -DNDEBUG   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/_CARES_swig_doc_tag.dir/_CARES_swig_doc_tag.cpp.o -c /home/rtp/rtp/GNU-Radio/gr-CARES/build/swig/_CARES_swig_doc_tag.cpp",
+  "file": "/home/rtp/rtp/GNU-Radio/gr-CARES/build/swig/_CARES_swig_doc_tag.cpp"
+},
+{
+  "directory": "/home/rtp/rtp/GNU-Radio/gr-CARES/build/swig",
+  "command": "/usr/bin/c++  -DCARES_swig_EXPORTS -DGR_CTRLPORT -I/usr/include/eigen3 -I/home/rtp/rtp/GNU-Radio/gr-CARES/build/swig -I/home/rtp/rtp/GNU-Radio/gr-CARES/swig -I/usr/include/gnuradio/swig -isystem /usr/include/python3.6m -I/home/rtp/rtp/GNU-Radio/gr-CARES/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/CARES_swig.dir/CMakeFiles/CARES_swig.dir/CARES_swigPYTHON_wrap.cxx.o -c /home/rtp/rtp/GNU-Radio/gr-CARES/build/swig/CMakeFiles/CARES_swig.dir/CARES_swigPYTHON_wrap.cxx",
+  "file": "/home/rtp/rtp/GNU-Radio/gr-CARES/build/swig/CMakeFiles/CARES_swig.dir/CARES_swigPYTHON_wrap.cxx"
+}
+]

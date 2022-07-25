@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1CARES_1_1calibrate__lin__array__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::CARES::calibrate_lin_array_impl</compoundname>
+    <basecompoundref refid="classgr_1_1CARES_1_1calibrate__lin__array" prot="public" virt="non-virtual">gr::CARES::calibrate_lin_array</basecompoundref>
+    <includes refid="calibrate__lin__array__impl_8h" local="no">calibrate_lin_array_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1calibrate__lin__array__impl_1af2b4fd79fdfdbcca05e7ec90fb489b36" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::CARES::calibrate_lin_array_impl::d_norm_spacing</definition>
+        <argsstring></argsstring>
+        <name>d_norm_spacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" line="36" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1calibrate__lin__array__impl_1ad53c67ad78eb0d053935139bbb71eaab" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::CARES::calibrate_lin_array_impl::d_num_ant_ele</definition>
+        <argsstring></argsstring>
+        <name>d_num_ant_ele</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" line="37" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a3c2494d7c759d21d1168e36fd0447c4b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::CARES::calibrate_lin_array_impl::d_pilot_angle</definition>
+        <argsstring></argsstring>
+        <name>d_pilot_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" line="38" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1calibrate__lin__array__impl_1adaf9548d442781dde5bcbabcc4b2cdd9" prot="private" static="no" mutable="no">
+        <type>fcolvec</type>
+        <definition>fcolvec gr::CARES::calibrate_lin_array_impl::d_array_loc</definition>
+        <argsstring></argsstring>
+        <name>d_array_loc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" line="39" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a18e601de73aa9e3b36dab07ccd2ace0e" prot="private" static="no" mutable="no">
+        <type>cx_fmat</type>
+        <definition>cx_fmat gr::CARES::calibrate_lin_array_impl::d_diagmat_v_vec</definition>
+        <argsstring></argsstring>
+        <name>d_diagmat_v_vec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" line="40" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1CARES_1_1calibrate__lin__array__impl_1aecac899eb662e610781ad16ccca8861c" prot="private" static="no" mutable="no">
+        <type>cx_fmat</type>
+        <definition>cx_fmat gr::CARES::calibrate_lin_array_impl::d_diagmat_v_vec_conj</definition>
+        <argsstring></argsstring>
+        <name>d_diagmat_v_vec_conj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" line="41" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a080a192dccf475883da335815c20e166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::CARES::calibrate_lin_array_impl::calibrate_lin_array_impl</definition>
+        <argsstring>(float norm_spacing, int num_ant_ele, float pilot_angle)</argsstring>
+        <name>calibrate_lin_array_impl</name>
+        <param>
+          <type>float</type>
+          <declname>norm_spacing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_ant_ele</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pilot_angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1CARES_1_1calibrate__lin__array__impl_1acf2c4e0706e8aba6644da870a794aab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::CARES::calibrate_lin_array_impl::~calibrate_lin_array_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~calibrate_lin_array_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a15533e5d7e96c36fede14d893f46a635" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::CARES::calibrate_lin_array_impl::amv</definition>
+        <argsstring>(cx_fcolvec &amp;v_ii, fcolvec &amp;array_loc, float theta)</argsstring>
+        <name>amv</name>
+        <param>
+          <type>cx_fcolvec &amp;</type>
+          <declname>v_ii</declname>
+        </param>
+        <param>
+          <type>fcolvec &amp;</type>
+          <declname>array_loc</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a1742d9a41bdcf2a35b91353bc970f3ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::CARES::calibrate_lin_array_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>gr::CARES::calibrate_lin_array</label>
+        <link refid="classgr_1_1CARES_1_1calibrate__lin__array"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>gr::CARES::calibrate_lin_array_impl</label>
+        <link refid="classgr_1_1CARES_1_1calibrate__lin__array__impl"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gr::sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>gr::CARES::calibrate_lin_array</label>
+        <link refid="classgr_1_1CARES_1_1calibrate__lin__array"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gr::CARES::calibrate_lin_array_impl</label>
+        <link refid="classgr_1_1CARES_1_1calibrate__lin__array__impl"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>gr::sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" line="34" column="1" bodyfile="/home/rtp/rtp/GNU-Radio/gr-CARES/lib/calibrate_lin_array_impl.h" bodystart="33" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a15533e5d7e96c36fede14d893f46a635" prot="public" virt="non-virtual"><scope>gr::CARES::calibrate_lin_array_impl</scope><name>amv</name></member>
+      <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a080a192dccf475883da335815c20e166" prot="public" virt="non-virtual"><scope>gr::CARES::calibrate_lin_array_impl</scope><name>calibrate_lin_array_impl</name></member>
+      <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1adaf9548d442781dde5bcbabcc4b2cdd9" prot="private" virt="non-virtual"><scope>gr::CARES::calibrate_lin_array_impl</scope><name>d_array_loc</name></member>
+      <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a18e601de73aa9e3b36dab07ccd2ace0e" prot="private" virt="non-virtual"><scope>gr::CARES::calibrate_lin_array_impl</scope><name>d_diagmat_v_vec</name></member>
+      <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1aecac899eb662e610781ad16ccca8861c" prot="private" virt="non-virtual"><scope>gr::CARES::calibrate_lin_array_impl</scope><name>d_diagmat_v_vec_conj</name></member>
+      <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1af2b4fd79fdfdbcca05e7ec90fb489b36" prot="private" virt="non-virtual"><scope>gr::CARES::calibrate_lin_array_impl</scope><name>d_norm_spacing</name></member>
+      <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1ad53c67ad78eb0d053935139bbb71eaab" prot="private" virt="non-virtual"><scope>gr::CARES::calibrate_lin_array_impl</scope><name>d_num_ant_ele</name></member>
+      <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a3c2494d7c759d21d1168e36fd0447c4b" prot="private" virt="non-virtual"><scope>gr::CARES::calibrate_lin_array_impl</scope><name>d_pilot_angle</name></member>
+      <member refid="classgr_1_1CARES_1_1calibrate__lin__array_1a83490747f64a06d5e20e742ba2f2354f" prot="public" virt="non-virtual"><scope>gr::CARES::calibrate_lin_array_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1CARES_1_1calibrate__lin__array_1a1111d31ca441acbafc7223d672be36c9" prot="public" virt="non-virtual"><scope>gr::CARES::calibrate_lin_array_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1a1742d9a41bdcf2a35b91353bc970f3ca" prot="public" virt="non-virtual"><scope>gr::CARES::calibrate_lin_array_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1CARES_1_1calibrate__lin__array__impl_1acf2c4e0706e8aba6644da870a794aab1" prot="public" virt="non-virtual"><scope>gr::CARES::calibrate_lin_array_impl</scope><name>~calibrate_lin_array_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

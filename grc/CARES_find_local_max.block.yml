@@ -1,0 +1,59 @@
+id: CARES_find_local_max
+label: Find Local Max
+category: '[CARES]'
+
+templates:
+  imports: import CARES
+  make: CARES.find_local_max(${num_max_vals}, ${vector_len}, ${x_min}, ${x_max})
+
+#  Make one 'parameters' list entry for every parameter you want settable from the GUI.
+#     Keys include:
+#     * id (makes the value accessible as \$keyname, e.g. in the make entry)
+#     * label (label shown in the GUI)
+#     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+parameters:
+- id: num_max_vals
+  label: Num. Max Values
+  dtype: int
+  default: 1
+- id: vector_len
+  label: Vector Len.
+  default: 2**9
+  dtype: int
+- id: x_min
+  label: X min
+  dtype: float
+  default: 0.0
+- id: x_max
+  label: X Max
+  dtype: float
+  default: 180.0
+
+asserts:
+- ${ num_max_vals > 0}
+- ${ vector_len > 0}
+- ${ x_max > x_min}
+
+#  Make one 'inputs' list entry per input and one 'outputs' list entry per output.
+#  Keys include:
+#      * label (an identifier for the GUI)
+#      * domain (optional - stream or message. Default is stream)
+#      * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+#      * vlen (optional - data stream vector length. Default is 1)
+#      * optional (optional - set to 1 for optional inputs. Default is 0)
+inputs:
+- label: in
+  dtype: float
+  vlen: ${ vector_len }
+
+outputs:
+- label: max
+  dtype: float
+  vlen: ${ num_max_vals }
+- label: arg-max
+  dtype: float
+  vlen: ${ num_max_vals }
+
+#  'file_format' specifies the version of the GRC yml format used in the file
+#  and should usually not be changed.
+file_format: 1

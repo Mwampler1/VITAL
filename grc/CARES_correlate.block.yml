@@ -1,0 +1,60 @@
+id: CARES_autocorrelate
+label: Correlate
+category: '[CARES]'
+documentation: |-
+  This block generates a sample correlation matrix for the input vector comprised of values drawn from the receive channels. 
+  Args:
+  inputs: Number of inputs to the block
+  snapshot_size: Determines num. of samples used to compute the sample correlation matrix
+  overlap_size: Overlap size between snapshots
+  avg_method: Use either standard forward-averaging method or a forward-backward averaging method to compute the sample correlation matrix.
+
+templates:
+  imports: import CARES
+  make: CARES.correlate(${num_inputs}, ${snapshot_size}, ${overlap_size}, ${avg_method})
+
+#  Make one 'parameters' list entry for every parameter you want settable from the GUI.
+#     Keys include:
+#     * id (makes the value accessible as \$keyname, e.g. in the make entry)
+#     * label (label shown in the GUI)
+#     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+parameters:
+- id: snapshot_size
+  label: Snapshot Size
+  dtype: int
+  default: 2048
+- id: overlap_size
+  label: Overlap Size
+  dtype: int
+  default: 512
+- id: num_inputs
+  label: Num Inputs
+  dtype: int
+  default: 2
+- id: avg_method
+  label: Averaging Method
+  dtype: enum
+  options: ['0', '1']
+  option_labels: ['Forward', 'Forward-Backward']
+
+asserts:
+-  ${num_inputs > 0}
+-  ${snapshot_size > 0}
+-  ${overlap_size < snapshot_size}
+
+inputs:
+- label: in
+  domain: stream
+  dtype: complex
+  optional: 0
+  multiplicity: ${ num_inputs }
+outputs:
+- label: out
+  domain: stream
+  dtype: complex
+  vlen: ${num_inputs*num_inputs }
+  optional: 0
+
+#  'file_format' specifies the version of the GRC yml format used in the file
+#  and should usually not be changed.
+file_format: 1

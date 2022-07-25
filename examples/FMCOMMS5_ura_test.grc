@@ -1,0 +1,824 @@
+options:
+  parameters:
+    author: ''
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: FMCOMMS5_ura_attempt
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: ''
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 24]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: center_freq
+  id: variable
+  parameters:
+    comment: ''
+    value: '2450000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1024, 36.0]
+    rotation: 0
+    state: true
+- name: directory_config_files
+  id: variable
+  parameters:
+    comment: ''
+    value: '"/tmp"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [736, 36.0]
+    rotation: 0
+    state: true
+- name: gain
+  id: variable
+  parameters:
+    comment: ''
+    value: '60'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1232, 36.0]
+    rotation: 0
+    state: true
+- name: input_variables
+  id: variable_struct
+  parameters:
+    comment: "input_variables: \nContains all the user-defined variables."
+    field0: ToneFreq
+    field1: SampleRate
+    field10: PSpectrumLength
+    field11: DirectoryConfigFiles
+    field12: RelativePhaseOffsets
+    field13: ''
+    field14: ''
+    field15: ''
+    field16: ''
+    field17: ''
+    field18: ''
+    field19: ''
+    field2: CenterFreq
+    field3: RxAddr
+    field4: Gain
+    field5: NumArrayElements
+    field6: NormSpacing
+    field7: SnapshotSize
+    field8: OverlapSize
+    field9: NumTargets
+    value0: '10000'
+    value1: '10000000'
+    value10: 2**10
+    value11: '"/tmp"'
+    value12: '"measure_X310_TwinRX_relative_phase_offsets_245.cfg"'
+    value13: '0'
+    value14: '0'
+    value15: '0'
+    value16: '0'
+    value17: '0'
+    value18: '0'
+    value19: '0'
+    value2: '2450000000'
+    value3: '"ip:192.168.3.2"'
+    value4: '60'
+    value5: '4'
+    value6: '0.5'
+    value7: 2**11
+    value8: 2**9
+    value9: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [64, 120]
+    rotation: 0
+    state: enabled
+- name: norm_spacing
+  id: variable
+  parameters:
+    comment: ''
+    value: '0.500'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [880, 92.0]
+    rotation: 0
+    state: true
+- name: num_array_elements
+  id: variable
+  parameters:
+    comment: ''
+    value: '4'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [744, 92.0]
+    rotation: 0
+    state: true
+- name: num_targets
+  id: variable
+  parameters:
+    comment: ''
+    value: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1168, 92.0]
+    rotation: 0
+    state: true
+- name: overlap_size
+  id: variable
+  parameters:
+    comment: ''
+    value: '512'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1072, 92.0]
+    rotation: 0
+    state: true
+- name: pspectrum_length
+  id: variable
+  parameters:
+    comment: ''
+    value: '1024'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1264, 92.0]
+    rotation: 0
+    state: true
+- name: rel_phase_offsets_file_name
+  id: variable
+  parameters:
+    comment: ''
+    value: os.path.join(directory_config_files, relative_phase_offset)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [576, 36.0]
+    rotation: 0
+    state: enabled
+- name: relative_phase_offset
+  id: variable
+  parameters:
+    comment: ''
+    value: '"FMCOMMS5_relative_phase_offsets.cfg"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [576, 92.0]
+    rotation: 0
+    state: true
+- name: rx_addr
+  id: variable
+  parameters:
+    comment: ''
+    value: '"ip:192.168.3.2"'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1112, 36.0]
+    rotation: 0
+    state: true
+- name: samp_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: '10000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [864, 36.0]
+    rotation: 0
+    state: true
+- name: snapshot_size
+  id: variable
+  parameters:
+    comment: ''
+    value: '2048'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [976, 92.0]
+    rotation: 0
+    state: true
+- name: tone_freq
+  id: variable
+  parameters:
+    comment: ''
+    value: '10000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [944, 36.0]
+    rotation: 0
+    state: true
+- name: CARES_phase_correct_hier_0
+  id: CARES_phase_correct_hier
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    config_filename: rel_phase_offsets_file_name
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_ports: num_array_elements
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [568, 264.0]
+    rotation: 0
+    state: true
+- name: aoa_MUSIC_lin_array_0
+  id: aoa_MUSIC_lin_array
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    norm_spacing: norm_spacing
+    num_inputs: int(numpy.sqrt(num_array_elements))
+    num_targets: num_targets
+    pspectrum_len: pspectrum_length
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1144, 228.0]
+    rotation: 0
+    state: true
+- name: aoa_MUSIC_lin_array_0_0
+  id: aoa_MUSIC_lin_array
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    norm_spacing: norm_spacing
+    num_inputs: int(numpy.sqrt(num_array_elements))
+    num_targets: num_targets
+    pspectrum_len: pspectrum_length
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1144, 436.0]
+    rotation: 0
+    state: true
+- name: aoa_MUSIC_lin_array_0_0_0
+  id: aoa_MUSIC_lin_array
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    norm_spacing: norm_spacing
+    num_inputs: int(numpy.sqrt(num_array_elements))
+    num_targets: num_targets
+    pspectrum_len: pspectrum_length
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1152, 332.0]
+    rotation: 0
+    state: true
+- name: aoa_MUSIC_lin_array_0_0_0_0
+  id: aoa_MUSIC_lin_array
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    norm_spacing: norm_spacing
+    num_inputs: int(numpy.sqrt(num_array_elements))
+    num_targets: num_targets
+    pspectrum_len: pspectrum_length
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1152, 556.0]
+    rotation: 0
+    state: true
+- name: aoa_autocorrelate_0
+  id: aoa_autocorrelate
+  parameters:
+    affinity: ''
+    alias: ''
+    avg_method: '1'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: int(numpy.sqrt(num_array_elements))
+    overlap_size: overlap_size
+    snapshot_size: snapshot_size
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [840, 220.0]
+    rotation: 0
+    state: true
+- name: aoa_autocorrelate_0_0
+  id: aoa_autocorrelate
+  parameters:
+    affinity: ''
+    alias: ''
+    avg_method: '1'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: int(numpy.sqrt(num_array_elements))
+    overlap_size: overlap_size
+    snapshot_size: snapshot_size
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [832, 444.0]
+    rotation: 0
+    state: true
+- name: aoa_autocorrelate_0_0_0
+  id: aoa_autocorrelate
+  parameters:
+    affinity: ''
+    alias: ''
+    avg_method: '1'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: int(numpy.sqrt(num_array_elements))
+    overlap_size: overlap_size
+    snapshot_size: snapshot_size
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [840, 332.0]
+    rotation: 0
+    state: true
+- name: aoa_autocorrelate_0_0_0_0
+  id: aoa_autocorrelate
+  parameters:
+    affinity: ''
+    alias: ''
+    avg_method: '1'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: int(numpy.sqrt(num_array_elements))
+    overlap_size: overlap_size
+    snapshot_size: snapshot_size
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [832, 556.0]
+    rotation: 0
+    state: true
+- name: iio_fmcomms5_source_0
+  id: iio_fmcomms5_source
+  parameters:
+    affinity: ''
+    alias: ''
+    bandwidth: samp_rate
+    bbdc: 'True'
+    buffer_size: '0x8000'
+    comment: ''
+    filter: ''
+    frequency1: center_freq
+    frequency2: center_freq
+    gain1: '''manual'''
+    gain2: '''manual'''
+    gain3: '''manual'''
+    gain4: '''manual'''
+    manual_gain1: gain
+    manual_gain2: gain
+    manual_gain3: gain
+    manual_gain4: gain
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    quadrature: 'True'
+    rf_port_select: '''A_BALANCED'''
+    rfdc: 'True'
+    rx1_en: 'True'
+    rx2_en: 'True'
+    rx3_en: 'True'
+    rx4_en: 'True'
+    samplerate: samp_rate
+    uri: input_variables.RxAddr
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [264, 172.0]
+    rotation: 0
+    state: enabled
+- name: import
+  id: import
+  parameters:
+    alias: ''
+    comment: ''
+    imports: import os, numpy
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [440, 24]
+    rotation: 0
+    state: enabled
+- name: qtgui_vector_sink_f_0
+  id: qtgui_vector_sink_f
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    grid: 'True'
+    gui_hint: tab@0
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '""'
+    nconnections: '1'
+    ref_level: '0'
+    showports: 'True'
+    update_time: '0.05'
+    vlen: pspectrum_length
+    width1: '2'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    x_axis_label: '"angle (in degrees)"'
+    x_start: '0'
+    x_step: 180/pspectrum_length
+    x_units: '""'
+    y_axis_label: '"Pseudo-Spectrum (dB)"'
+    y_units: '""'
+    ymax: '0'
+    ymin: '-20'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1408, 132.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_vector_sink_f_0_0
+  id: qtgui_vector_sink_f
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    grid: 'True'
+    gui_hint: tab@0
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '""'
+    nconnections: '1'
+    ref_level: '0'
+    showports: 'True'
+    update_time: '0.05'
+    vlen: pspectrum_length
+    width1: '2'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    x_axis_label: '"angle (in degrees)"'
+    x_start: '0'
+    x_step: 180/pspectrum_length
+    x_units: '""'
+    y_axis_label: '"Pseudo-Spectrum (dB)"'
+    y_units: '""'
+    ymax: '0'
+    ymin: '-20'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1408, 588.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_vector_sink_f_0_0_0
+  id: qtgui_vector_sink_f
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    grid: 'True'
+    gui_hint: tab@0
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '""'
+    nconnections: '1'
+    ref_level: '0'
+    showports: 'True'
+    update_time: '0.05'
+    vlen: pspectrum_length
+    width1: '2'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    x_axis_label: '"angle (in degrees)"'
+    x_start: '0'
+    x_step: 180/pspectrum_length
+    x_units: '""'
+    y_axis_label: '"Pseudo-Spectrum (dB)"'
+    y_units: '""'
+    ymax: '0'
+    ymin: '-20'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1408, 436.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_vector_sink_f_0_0_0_0
+  id: qtgui_vector_sink_f
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    grid: 'True'
+    gui_hint: tab@0
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '""'
+    nconnections: '1'
+    ref_level: '0'
+    showports: 'True'
+    update_time: '0.05'
+    vlen: pspectrum_length
+    width1: '2'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    x_axis_label: '"angle (in degrees)"'
+    x_start: '0'
+    x_step: 180/pspectrum_length
+    x_units: '""'
+    y_axis_label: '"Pseudo-Spectrum (dB)"'
+    y_units: '""'
+    ymax: '0'
+    ymin: '-20'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1408, 284.0]
+    rotation: 0
+    state: enabled
+- name: tab
+  id: qtgui_tab_widget
+  parameters:
+    alias: ''
+    comment: ''
+    gui_hint: ''
+    label0: Pseudo-Spectrum
+    label1: Angle of Arrival (MUSIC)
+    label10: Tab 10
+    label11: Tab 11
+    label12: Tab 12
+    label13: Tab 13
+    label14: Tab 14
+    label15: Tab 15
+    label16: Tab 16
+    label17: Tab 17
+    label18: Tab 18
+    label19: Tab 19
+    label2: Tab 2
+    label3: Tab 3
+    label4: Tab 4
+    label5: Tab 5
+    label6: Tab 6
+    label7: Tab 7
+    label8: Tab 8
+    label9: Tab 9
+    num_tabs: '2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [256, 24]
+    rotation: 0
+    state: enabled
+
+connections:
+- [CARES_phase_correct_hier_0, '0', aoa_autocorrelate_0, '0']
+- [CARES_phase_correct_hier_0, '0', aoa_autocorrelate_0_0_0, '0']
+- [CARES_phase_correct_hier_0, '1', aoa_autocorrelate_0, '1']
+- [CARES_phase_correct_hier_0, '1', aoa_autocorrelate_0_0, '0']
+- [CARES_phase_correct_hier_0, '2', aoa_autocorrelate_0_0_0, '1']
+- [CARES_phase_correct_hier_0, '2', aoa_autocorrelate_0_0_0_0, '0']
+- [CARES_phase_correct_hier_0, '3', aoa_autocorrelate_0_0, '1']
+- [CARES_phase_correct_hier_0, '3', aoa_autocorrelate_0_0_0_0, '1']
+- [aoa_MUSIC_lin_array_0, '0', qtgui_vector_sink_f_0, '0']
+- [aoa_MUSIC_lin_array_0_0, '0', qtgui_vector_sink_f_0_0_0, '0']
+- [aoa_MUSIC_lin_array_0_0_0, '0', qtgui_vector_sink_f_0_0_0_0, '0']
+- [aoa_MUSIC_lin_array_0_0_0_0, '0', qtgui_vector_sink_f_0_0, '0']
+- [aoa_autocorrelate_0, '0', aoa_MUSIC_lin_array_0, '0']
+- [aoa_autocorrelate_0_0, '0', aoa_MUSIC_lin_array_0_0, '0']
+- [aoa_autocorrelate_0_0_0, '0', aoa_MUSIC_lin_array_0_0_0, '0']
+- [aoa_autocorrelate_0_0_0_0, '0', aoa_MUSIC_lin_array_0_0_0_0, '0']
+- [iio_fmcomms5_source_0, '0', CARES_phase_correct_hier_0, '0']
+- [iio_fmcomms5_source_0, '1', CARES_phase_correct_hier_0, '1']
+- [iio_fmcomms5_source_0, '2', CARES_phase_correct_hier_0, '2']
+- [iio_fmcomms5_source_0, '3', CARES_phase_correct_hier_0, '3']
+
+metadata:
+  file_format: 1

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1CARES_1_1antenna__correction" kind="class"><name>gr::CARES::antenna_correction</name>
+    <member refid="classgr_1_1CARES_1_1antenna__correction_1afadb6a24b60bef7861b22077bbff8db9" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1CARES_1_1antenna__correction_1ac86db87c5d254f8c76b0fc84596f32c9" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1calibrate__lin__array" kind="class"><name>gr::CARES::calibrate_lin_array</name>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array_1a1111d31ca441acbafc7223d672be36c9" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1CARES_1_1calibrate__lin__array_1a83490747f64a06d5e20e742ba2f2354f" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1correlate" kind="class"><name>gr::CARES::correlate</name>
+    <member refid="classgr_1_1CARES_1_1correlate_1a278947ad7c57688bc273f84df93e37b3" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1CARES_1_1correlate_1ae634327878ea88971bc5515ed957c3c4" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1find__local__max" kind="class"><name>gr::CARES::find_local_max</name>
+    <member refid="classgr_1_1CARES_1_1find__local__max_1a9ddae5f67551dc6800bf857e1e13846b" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1CARES_1_1find__local__max_1a4751db154bbe74bf9f1e7a19de2ab5a8" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1CARES_1_1MUSIC__lin__array" kind="class"><name>gr::CARES::MUSIC_lin_array</name>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array_1a6480d460691875ef26afa2057d5d4da0" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1CARES_1_1MUSIC__lin__array_1ac067922dc853c3b90a437f843dc0b11c" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1CARES" kind="namespace"><name>gr::CARES</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="antenna__correction_8h" kind="file"><name>antenna_correction.h</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a13e8645dd8c2ce107899b7bbd6a0838d" kind="define"><name>CARES_API</name></member>
+  </compound>
+  <compound refid="calibrate__lin__array_8h" kind="file"><name>calibrate_lin_array.h</name>
+  </compound>
+  <compound refid="correlate_8h" kind="file"><name>correlate.h</name>
+  </compound>
+  <compound refid="find__local__max_8h" kind="file"><name>find_local_max.h</name>
+  </compound>
+  <compound refid="MUSIC__lin__array_8h" kind="file"><name>MUSIC_lin_array.h</name>
+  </compound>
+  <compound refid="dir_e448d07e4cc2907c0d235950f31920a2" kind="dir"><name>CARES</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+</doxygenindex>
